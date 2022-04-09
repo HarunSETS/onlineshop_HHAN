@@ -48,9 +48,9 @@
             this.buttonAdmNarudzbe.BackColor = System.Drawing.Color.Moccasin;
             this.buttonAdmNarudzbe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdmNarudzbe.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdmNarudzbe.Location = new System.Drawing.Point(352, 235);
+            this.buttonAdmNarudzbe.Location = new System.Drawing.Point(352, 215);
             this.buttonAdmNarudzbe.Name = "buttonAdmNarudzbe";
-            this.buttonAdmNarudzbe.Size = new System.Drawing.Size(216, 54);
+            this.buttonAdmNarudzbe.Size = new System.Drawing.Size(216, 58);
             this.buttonAdmNarudzbe.TabIndex = 14;
             this.buttonAdmNarudzbe.Text = "Pregled i brisanje narudžbi";
             this.buttonAdmNarudzbe.UseVisualStyleBackColor = false;
@@ -61,9 +61,9 @@
             this.buttonAdmKupci.BackColor = System.Drawing.Color.Moccasin;
             this.buttonAdmKupci.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdmKupci.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdmKupci.Location = new System.Drawing.Point(352, 93);
+            this.buttonAdmKupci.Location = new System.Drawing.Point(352, 73);
             this.buttonAdmKupci.Name = "buttonAdmKupci";
-            this.buttonAdmKupci.Size = new System.Drawing.Size(216, 54);
+            this.buttonAdmKupci.Size = new System.Drawing.Size(216, 58);
             this.buttonAdmKupci.TabIndex = 15;
             this.buttonAdmKupci.Text = "Administracija korisnika";
             this.buttonAdmKupci.UseVisualStyleBackColor = false;
@@ -74,9 +74,9 @@
             this.buttonAdmArtikli.BackColor = System.Drawing.Color.Moccasin;
             this.buttonAdmArtikli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdmArtikli.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdmArtikli.Location = new System.Drawing.Point(352, 164);
+            this.buttonAdmArtikli.Location = new System.Drawing.Point(352, 144);
             this.buttonAdmArtikli.Name = "buttonAdmArtikli";
-            this.buttonAdmArtikli.Size = new System.Drawing.Size(216, 54);
+            this.buttonAdmArtikli.Size = new System.Drawing.Size(216, 58);
             this.buttonAdmArtikli.TabIndex = 16;
             this.buttonAdmArtikli.Text = "Administracija artikala";
             this.buttonAdmArtikli.UseVisualStyleBackColor = false;
@@ -88,7 +88,7 @@
             this.meniToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(614, 24);
+            this.menuStrip.Size = new System.Drawing.Size(614, 26);
             this.menuStrip.TabIndex = 28;
             this.menuStrip.Text = "Glavni meni";
             // 
@@ -101,34 +101,34 @@
             this.ToolStripMenuItemOdjava});
             this.meniToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.meniToolStripMenuItem.Name = "meniToolStripMenuItem";
-            this.meniToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.meniToolStripMenuItem.Size = new System.Drawing.Size(52, 22);
             this.meniToolStripMenuItem.Text = "Meni";
             // 
             // ToolStripMenuItemAdmKupaca
             // 
             this.ToolStripMenuItemAdmKupaca.Name = "ToolStripMenuItemAdmKupaca";
-            this.ToolStripMenuItemAdmKupaca.Size = new System.Drawing.Size(221, 22);
+            this.ToolStripMenuItemAdmKupaca.Size = new System.Drawing.Size(241, 22);
             this.ToolStripMenuItemAdmKupaca.Text = "Administracija korisnika";
             this.ToolStripMenuItemAdmKupaca.Click += new System.EventHandler(this.ToolStripMenuItemAdmKupaca_Click);
             // 
             // ToolStripMenuItemAdmArtikala
             // 
             this.ToolStripMenuItemAdmArtikala.Name = "ToolStripMenuItemAdmArtikala";
-            this.ToolStripMenuItemAdmArtikala.Size = new System.Drawing.Size(221, 22);
+            this.ToolStripMenuItemAdmArtikala.Size = new System.Drawing.Size(241, 22);
             this.ToolStripMenuItemAdmArtikala.Text = "Administracija artikala";
             this.ToolStripMenuItemAdmArtikala.Click += new System.EventHandler(this.ToolStripMenuItemAdmArtikala_Click);
             // 
             // ToolStripMenuItemPregledBrisanjeNarudzbi
             // 
             this.ToolStripMenuItemPregledBrisanjeNarudzbi.Name = "ToolStripMenuItemPregledBrisanjeNarudzbi";
-            this.ToolStripMenuItemPregledBrisanjeNarudzbi.Size = new System.Drawing.Size(221, 22);
+            this.ToolStripMenuItemPregledBrisanjeNarudzbi.Size = new System.Drawing.Size(241, 22);
             this.ToolStripMenuItemPregledBrisanjeNarudzbi.Text = "Pregled i brisanje narudžbi";
             this.ToolStripMenuItemPregledBrisanjeNarudzbi.Click += new System.EventHandler(this.ToolStripMenuItemPregledBrisanjeNarudzbi_Click);
             // 
             // ToolStripMenuItemOdjava
             // 
             this.ToolStripMenuItemOdjava.Name = "ToolStripMenuItemOdjava";
-            this.ToolStripMenuItemOdjava.Size = new System.Drawing.Size(221, 22);
+            this.ToolStripMenuItemOdjava.Size = new System.Drawing.Size(241, 22);
             this.ToolStripMenuItemOdjava.Text = "Odjava iz aplikacije";
             this.ToolStripMenuItemOdjava.Click += new System.EventHandler(this.ToolStripMenuItemOdjava_Click);
             // 
@@ -151,13 +151,13 @@
             this.labelKorisnikInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.labelKorisnikInfo.Location = new System.Drawing.Point(354, 6);
             this.labelKorisnikInfo.Name = "labelKorisnikInfo";
-            this.labelKorisnikInfo.Size = new System.Drawing.Size(134, 14);
+            this.labelKorisnikInfo.Size = new System.Drawing.Size(150, 18);
             this.labelKorisnikInfo.TabIndex = 29;
             this.labelKorisnikInfo.Text = "prijavljeni korisnik info";
             // 
             // FormAdmGlavna
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(614, 301);
             this.Controls.Add(this.labelKorisnikInfo);

@@ -253,13 +253,13 @@ namespace prodaja_HHAN
             MySqlConnection con = new MySqlConnection(konekcioniString);
             con.Open();
 
-            string upit = " delete from stavke_narudzbinica" +
+            string upit = " delete from stavke_narudzbenica" +
                           " where narudzbenica_id = " + narudzbaID;
 
             MySqlCommand cmd = new MySqlCommand(upit, con);
             cmd.ExecuteNonQuery();
 
-                   upit = " delete from narudzbe" +
+                   upit = " delete from narudzbenice" +
                           " where narudzbenica_id = " + narudzbaID;
 
             MySqlCommand cmd2 = new MySqlCommand(upit, con);
@@ -353,9 +353,9 @@ namespace prodaja_HHAN
             for (int i = 0; i < dgv.Rows.Count; i++)
             {
                 if (dgv.Rows.IndexOf(dgv.Rows[i]) % 2 == 0)
-                    dgv.Rows[i].DefaultCellStyle.BackColor = Color.Gainsboro;
+                    dgv.Rows[i].DefaultCellStyle.BackColor = Color.AliceBlue;  //Color.Gainsboro;
                 else
-                    dgv.Rows[i].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+                    dgv.Rows[i].DefaultCellStyle.BackColor = Color.Lavender; //Color.WhiteSmoke;
             }
         }
 
