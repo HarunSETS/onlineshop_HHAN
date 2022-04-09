@@ -46,7 +46,7 @@
             this.buttonPrijava.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPrijava.Location = new System.Drawing.Point(421, 255);
             this.buttonPrijava.Name = "buttonPrijava";
-            this.buttonPrijava.Size = new System.Drawing.Size(113, 23);
+            this.buttonPrijava.Size = new System.Drawing.Size(113, 31);
             this.buttonPrijava.TabIndex = 11;
             this.buttonPrijava.Text = "Prijava";
             this.buttonPrijava.UseVisualStyleBackColor = false;
@@ -58,7 +58,7 @@
             this.textBoxSifra.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSifra.Location = new System.Drawing.Point(422, 219);
             this.textBoxSifra.Name = "textBoxSifra";
-            this.textBoxSifra.Size = new System.Drawing.Size(113, 21);
+            this.textBoxSifra.Size = new System.Drawing.Size(113, 24);
             this.textBoxSifra.TabIndex = 10;
             this.textBoxSifra.Text = "harun";
             this.textBoxSifra.UseSystemPasswordChar = true;
@@ -70,7 +70,7 @@
             this.textBoxKorisnickoIme.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxKorisnickoIme.Location = new System.Drawing.Point(422, 185);
             this.textBoxKorisnickoIme.Name = "textBoxKorisnickoIme";
-            this.textBoxKorisnickoIme.Size = new System.Drawing.Size(113, 21);
+            this.textBoxKorisnickoIme.Size = new System.Drawing.Size(113, 24);
             this.textBoxKorisnickoIme.TabIndex = 9;
             this.textBoxKorisnickoIme.Text = "harun.tabak";
             // 
@@ -87,7 +87,7 @@
             this.labelKorisnickoIme.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelKorisnickoIme.Location = new System.Drawing.Point(315, 185);
             this.labelKorisnickoIme.Name = "labelKorisnickoIme";
-            this.labelKorisnickoIme.Size = new System.Drawing.Size(92, 15);
+            this.labelKorisnickoIme.Size = new System.Drawing.Size(116, 21);
             this.labelKorisnickoIme.TabIndex = 7;
             this.labelKorisnickoIme.Text = "Korisničko ime:";
             // 
@@ -104,7 +104,7 @@
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(559, 298);
             this.Controls.Add(this.buttonPrijava);

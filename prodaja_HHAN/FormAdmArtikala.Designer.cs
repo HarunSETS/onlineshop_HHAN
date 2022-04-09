@@ -92,7 +92,8 @@
             this.MeniToolStripMenuItemGlavniAdmMeni});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(662, 24);
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip.Size = new System.Drawing.Size(883, 26);
             this.menuStrip.TabIndex = 30;
             this.menuStrip.Text = "Glavni meni";
             // 
@@ -104,13 +105,13 @@
             this.ToolStripMenuItemPregledBrisanjeNarudzbi,
             this.ToolStripMenuItemOdjava});
             this.meniToolStripMenuItem.Name = "meniToolStripMenuItem";
-            this.meniToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.meniToolStripMenuItem.Size = new System.Drawing.Size(52, 22);
             this.meniToolStripMenuItem.Text = "Meni";
             // 
             // ToolStripMenuItemAdmKupaca
             // 
             this.ToolStripMenuItemAdmKupaca.Name = "ToolStripMenuItemAdmKupaca";
-            this.ToolStripMenuItemAdmKupaca.Size = new System.Drawing.Size(221, 22);
+            this.ToolStripMenuItemAdmKupaca.Size = new System.Drawing.Size(241, 22);
             this.ToolStripMenuItemAdmKupaca.Text = "Administracija korisnika";
             this.ToolStripMenuItemAdmKupaca.Click += new System.EventHandler(this.ToolStripMenuItemAdmKupaca_Click);
             // 
@@ -118,27 +119,27 @@
             // 
             this.ToolStripMenuItemAdmArtikala.Enabled = false;
             this.ToolStripMenuItemAdmArtikala.Name = "ToolStripMenuItemAdmArtikala";
-            this.ToolStripMenuItemAdmArtikala.Size = new System.Drawing.Size(221, 22);
+            this.ToolStripMenuItemAdmArtikala.Size = new System.Drawing.Size(241, 22);
             this.ToolStripMenuItemAdmArtikala.Text = "Administracija artikala";
             // 
             // ToolStripMenuItemPregledBrisanjeNarudzbi
             // 
             this.ToolStripMenuItemPregledBrisanjeNarudzbi.Name = "ToolStripMenuItemPregledBrisanjeNarudzbi";
-            this.ToolStripMenuItemPregledBrisanjeNarudzbi.Size = new System.Drawing.Size(221, 22);
+            this.ToolStripMenuItemPregledBrisanjeNarudzbi.Size = new System.Drawing.Size(241, 22);
             this.ToolStripMenuItemPregledBrisanjeNarudzbi.Text = "Pregled i brisanje narudžbi";
             this.ToolStripMenuItemPregledBrisanjeNarudzbi.Click += new System.EventHandler(this.ToolStripMenuItemPregledBrisanjeNarudzbi_Click);
             // 
             // ToolStripMenuItemOdjava
             // 
             this.ToolStripMenuItemOdjava.Name = "ToolStripMenuItemOdjava";
-            this.ToolStripMenuItemOdjava.Size = new System.Drawing.Size(221, 22);
+            this.ToolStripMenuItemOdjava.Size = new System.Drawing.Size(241, 22);
             this.ToolStripMenuItemOdjava.Text = "Odjava iz aplikacije";
             this.ToolStripMenuItemOdjava.Click += new System.EventHandler(this.ToolStripMenuItemOdjava_Click);
             // 
             // MeniToolStripMenuItemGlavniAdmMeni
             // 
             this.MeniToolStripMenuItemGlavniAdmMeni.Name = "MeniToolStripMenuItemGlavniAdmMeni";
-            this.MeniToolStripMenuItemGlavniAdmMeni.Size = new System.Drawing.Size(152, 20);
+            this.MeniToolStripMenuItemGlavniAdmMeni.Size = new System.Drawing.Size(170, 22);
             this.MeniToolStripMenuItemGlavniAdmMeni.Text = "Povratak na glavni ekran";
             this.MeniToolStripMenuItemGlavniAdmMeni.Click += new System.EventHandler(this.MeniToolStripMenuItemGlavniAdmMeni_Click);
             // 
@@ -148,9 +149,10 @@
             this.labelKorisnikInfo.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.labelKorisnikInfo.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKorisnikInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.labelKorisnikInfo.Location = new System.Drawing.Point(391, 4);
+            this.labelKorisnikInfo.Location = new System.Drawing.Point(521, 5);
+            this.labelKorisnikInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelKorisnikInfo.Name = "labelKorisnikInfo";
-            this.labelKorisnikInfo.Size = new System.Drawing.Size(134, 14);
+            this.labelKorisnikInfo.Size = new System.Drawing.Size(150, 18);
             this.labelKorisnikInfo.TabIndex = 31;
             this.labelKorisnikInfo.Text = "prijavljeni korisnik info";
             // 
@@ -158,10 +160,11 @@
             // 
             this.tabControlArtikli.Controls.Add(this.tabPageAzuriranje);
             this.tabControlArtikli.Controls.Add(this.tabPageKreiranje);
-            this.tabControlArtikli.Location = new System.Drawing.Point(12, 221);
+            this.tabControlArtikli.Location = new System.Drawing.Point(16, 272);
+            this.tabControlArtikli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControlArtikli.Name = "tabControlArtikli";
             this.tabControlArtikli.SelectedIndex = 0;
-            this.tabControlArtikli.Size = new System.Drawing.Size(637, 152);
+            this.tabControlArtikli.Size = new System.Drawing.Size(849, 187);
             this.tabControlArtikli.TabIndex = 59;
             // 
             // tabPageAzuriranje
@@ -179,10 +182,11 @@
             this.tabPageAzuriranje.Controls.Add(this.textBoxVrstaAzuriranje);
             this.tabPageAzuriranje.Controls.Add(this.labelNazivAzuriraj);
             this.tabPageAzuriranje.Controls.Add(this.textBoxNazivAzuriranje);
-            this.tabPageAzuriranje.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAzuriranje.Location = new System.Drawing.Point(4, 25);
+            this.tabPageAzuriranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageAzuriranje.Name = "tabPageAzuriranje";
-            this.tabPageAzuriranje.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAzuriranje.Size = new System.Drawing.Size(629, 126);
+            this.tabPageAzuriranje.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageAzuriranje.Size = new System.Drawing.Size(841, 158);
             this.tabPageAzuriranje.TabIndex = 0;
             this.tabPageAzuriranje.Text = "Ažuriranje postojećeg artikla";
             this.tabPageAzuriranje.UseVisualStyleBackColor = true;
@@ -191,7 +195,8 @@
             // 
             this.numericUpDownCijenaAzuriranje.BackColor = System.Drawing.SystemColors.Info;
             this.numericUpDownCijenaAzuriranje.DecimalPlaces = 2;
-            this.numericUpDownCijenaAzuriranje.Location = new System.Drawing.Point(399, 78);
+            this.numericUpDownCijenaAzuriranje.Location = new System.Drawing.Point(532, 96);
+            this.numericUpDownCijenaAzuriranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownCijenaAzuriranje.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -199,20 +204,21 @@
             0});
             this.numericUpDownCijenaAzuriranje.Name = "numericUpDownCijenaAzuriranje";
             this.numericUpDownCijenaAzuriranje.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.numericUpDownCijenaAzuriranje.Size = new System.Drawing.Size(75, 20);
+            this.numericUpDownCijenaAzuriranje.Size = new System.Drawing.Size(100, 22);
             this.numericUpDownCijenaAzuriranje.TabIndex = 153;
             // 
             // numericUpDownKolicinaAzuriranje
             // 
             this.numericUpDownKolicinaAzuriranje.BackColor = System.Drawing.SystemColors.Info;
-            this.numericUpDownKolicinaAzuriranje.Location = new System.Drawing.Point(399, 52);
+            this.numericUpDownKolicinaAzuriranje.Location = new System.Drawing.Point(532, 64);
+            this.numericUpDownKolicinaAzuriranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownKolicinaAzuriranje.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
             this.numericUpDownKolicinaAzuriranje.Name = "numericUpDownKolicinaAzuriranje";
-            this.numericUpDownKolicinaAzuriranje.Size = new System.Drawing.Size(75, 20);
+            this.numericUpDownKolicinaAzuriranje.Size = new System.Drawing.Size(100, 22);
             this.numericUpDownKolicinaAzuriranje.TabIndex = 124;
             // 
             // buttonArtikliAzuriranje
@@ -220,9 +226,10 @@
             this.buttonArtikliAzuriranje.BackColor = System.Drawing.Color.Moccasin;
             this.buttonArtikliAzuriranje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonArtikliAzuriranje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonArtikliAzuriranje.Location = new System.Drawing.Point(501, 53);
+            this.buttonArtikliAzuriranje.Location = new System.Drawing.Point(668, 65);
+            this.buttonArtikliAzuriranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonArtikliAzuriranje.Name = "buttonArtikliAzuriranje";
-            this.buttonArtikliAzuriranje.Size = new System.Drawing.Size(110, 45);
+            this.buttonArtikliAzuriranje.Size = new System.Drawing.Size(147, 55);
             this.buttonArtikliAzuriranje.TabIndex = 75;
             this.buttonArtikliAzuriranje.Text = "Ažuriraj podatke o postojećem artiklu";
             this.buttonArtikliAzuriranje.UseVisualStyleBackColor = false;
@@ -230,9 +237,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(14, 23);
+            this.label8.Location = new System.Drawing.Point(19, 28);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 13);
+            this.label8.Size = new System.Drawing.Size(126, 17);
             this.label8.TabIndex = 74;
             this.label8.Text = "Sistemski ID artikla";
             // 
@@ -240,26 +248,29 @@
             // 
             this.textBoxIDAzuriranje.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBoxIDAzuriranje.Enabled = false;
-            this.textBoxIDAzuriranje.Location = new System.Drawing.Point(157, 19);
+            this.textBoxIDAzuriranje.Location = new System.Drawing.Point(209, 23);
+            this.textBoxIDAzuriranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxIDAzuriranje.Name = "textBoxIDAzuriranje";
-            this.textBoxIDAzuriranje.Size = new System.Drawing.Size(61, 20);
+            this.textBoxIDAzuriranje.Size = new System.Drawing.Size(80, 22);
             this.textBoxIDAzuriranje.TabIndex = 73;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(246, 56);
+            this.label7.Location = new System.Drawing.Point(328, 69);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 13);
+            this.label7.Size = new System.Drawing.Size(152, 17);
             this.label7.TabIndex = 72;
             this.label7.Text = "Dodaj dodatnu količinu";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(246, 23);
+            this.label3.Location = new System.Drawing.Point(328, 28);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 13);
+            this.label3.Size = new System.Drawing.Size(196, 17);
             this.label3.TabIndex = 64;
             this.label3.Text = "Trenutna količina na skladištu";
             // 
@@ -267,52 +278,58 @@
             // 
             this.textBoxKolicinaPrikazAzuriranje.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBoxKolicinaPrikazAzuriranje.Enabled = false;
-            this.textBoxKolicinaPrikazAzuriranje.Location = new System.Drawing.Point(399, 19);
+            this.textBoxKolicinaPrikazAzuriranje.Location = new System.Drawing.Point(532, 23);
+            this.textBoxKolicinaPrikazAzuriranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxKolicinaPrikazAzuriranje.Name = "textBoxKolicinaPrikazAzuriranje";
-            this.textBoxKolicinaPrikazAzuriranje.Size = new System.Drawing.Size(75, 20);
+            this.textBoxKolicinaPrikazAzuriranje.Size = new System.Drawing.Size(99, 22);
             this.textBoxKolicinaPrikazAzuriranje.TabIndex = 63;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(246, 82);
+            this.label2.Location = new System.Drawing.Point(328, 101);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.Size = new System.Drawing.Size(81, 17);
             this.label2.TabIndex = 62;
             this.label2.Text = "Cijena (KM)";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 78);
+            this.label1.Location = new System.Drawing.Point(19, 96);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.Size = new System.Drawing.Size(83, 17);
             this.label1.TabIndex = 60;
             this.label1.Text = "Vrsta artikla";
             // 
             // textBoxVrstaAzuriranje
             // 
             this.textBoxVrstaAzuriranje.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxVrstaAzuriranje.Location = new System.Drawing.Point(86, 75);
+            this.textBoxVrstaAzuriranje.Location = new System.Drawing.Point(115, 92);
+            this.textBoxVrstaAzuriranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxVrstaAzuriranje.Name = "textBoxVrstaAzuriranje";
-            this.textBoxVrstaAzuriranje.Size = new System.Drawing.Size(132, 20);
+            this.textBoxVrstaAzuriranje.Size = new System.Drawing.Size(175, 22);
             this.textBoxVrstaAzuriranje.TabIndex = 59;
             // 
             // labelNazivAzuriraj
             // 
             this.labelNazivAzuriraj.AutoSize = true;
-            this.labelNazivAzuriraj.Location = new System.Drawing.Point(14, 51);
+            this.labelNazivAzuriraj.Location = new System.Drawing.Point(19, 63);
+            this.labelNazivAzuriraj.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNazivAzuriraj.Name = "labelNazivAzuriraj";
-            this.labelNazivAzuriraj.Size = new System.Drawing.Size(65, 13);
+            this.labelNazivAzuriraj.Size = new System.Drawing.Size(85, 17);
             this.labelNazivAzuriraj.TabIndex = 58;
             this.labelNazivAzuriraj.Text = "Naziv artikla";
             // 
             // textBoxNazivAzuriranje
             // 
             this.textBoxNazivAzuriranje.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxNazivAzuriranje.Location = new System.Drawing.Point(86, 49);
+            this.textBoxNazivAzuriranje.Location = new System.Drawing.Point(115, 60);
+            this.textBoxNazivAzuriranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxNazivAzuriranje.Name = "textBoxNazivAzuriranje";
-            this.textBoxNazivAzuriranje.Size = new System.Drawing.Size(132, 20);
+            this.textBoxNazivAzuriranje.Size = new System.Drawing.Size(175, 22);
             this.textBoxNazivAzuriranje.TabIndex = 57;
             // 
             // tabPageKreiranje
@@ -330,10 +347,11 @@
             this.tabPageKreiranje.Controls.Add(this.textBoxVrstaKreiranje);
             this.tabPageKreiranje.Controls.Add(this.label11);
             this.tabPageKreiranje.Controls.Add(this.textBoxNazivKreiranje);
-            this.tabPageKreiranje.Location = new System.Drawing.Point(4, 22);
+            this.tabPageKreiranje.Location = new System.Drawing.Point(4, 25);
+            this.tabPageKreiranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageKreiranje.Name = "tabPageKreiranje";
-            this.tabPageKreiranje.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageKreiranje.Size = new System.Drawing.Size(629, 126);
+            this.tabPageKreiranje.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageKreiranje.Size = new System.Drawing.Size(841, 158);
             this.tabPageKreiranje.TabIndex = 1;
             this.tabPageKreiranje.Text = "Kreiranje novog artikla";
             this.tabPageKreiranje.UseVisualStyleBackColor = true;
@@ -342,7 +360,8 @@
             // 
             this.numericUpDownCijenaKreiranje.BackColor = System.Drawing.SystemColors.Info;
             this.numericUpDownCijenaKreiranje.DecimalPlaces = 2;
-            this.numericUpDownCijenaKreiranje.Location = new System.Drawing.Point(399, 78);
+            this.numericUpDownCijenaKreiranje.Location = new System.Drawing.Point(532, 96);
+            this.numericUpDownCijenaKreiranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownCijenaKreiranje.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -350,20 +369,21 @@
             0});
             this.numericUpDownCijenaKreiranje.Name = "numericUpDownCijenaKreiranje";
             this.numericUpDownCijenaKreiranje.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.numericUpDownCijenaKreiranje.Size = new System.Drawing.Size(75, 20);
+            this.numericUpDownCijenaKreiranje.Size = new System.Drawing.Size(100, 22);
             this.numericUpDownCijenaKreiranje.TabIndex = 151;
             // 
             // numericUpDownKolicinaKreiranje
             // 
             this.numericUpDownKolicinaKreiranje.BackColor = System.Drawing.SystemColors.Info;
-            this.numericUpDownKolicinaKreiranje.Location = new System.Drawing.Point(399, 52);
+            this.numericUpDownKolicinaKreiranje.Location = new System.Drawing.Point(532, 64);
+            this.numericUpDownKolicinaKreiranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownKolicinaKreiranje.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
             this.numericUpDownKolicinaKreiranje.Name = "numericUpDownKolicinaKreiranje";
-            this.numericUpDownKolicinaKreiranje.Size = new System.Drawing.Size(75, 20);
+            this.numericUpDownKolicinaKreiranje.Size = new System.Drawing.Size(100, 22);
             this.numericUpDownKolicinaKreiranje.TabIndex = 150;
             // 
             // buttonArtikliKreiranje
@@ -371,9 +391,10 @@
             this.buttonArtikliKreiranje.BackColor = System.Drawing.Color.Moccasin;
             this.buttonArtikliKreiranje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonArtikliKreiranje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonArtikliKreiranje.Location = new System.Drawing.Point(501, 53);
+            this.buttonArtikliKreiranje.Location = new System.Drawing.Point(668, 65);
+            this.buttonArtikliKreiranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonArtikliKreiranje.Name = "buttonArtikliKreiranje";
-            this.buttonArtikliKreiranje.Size = new System.Drawing.Size(110, 45);
+            this.buttonArtikliKreiranje.Size = new System.Drawing.Size(147, 55);
             this.buttonArtikliKreiranje.TabIndex = 149;
             this.buttonArtikliKreiranje.Text = "Kreiraj novi artikl";
             this.buttonArtikliKreiranje.UseVisualStyleBackColor = false;
@@ -381,9 +402,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 23);
+            this.label4.Location = new System.Drawing.Point(19, 28);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 13);
+            this.label4.Size = new System.Drawing.Size(126, 17);
             this.label4.TabIndex = 148;
             this.label4.Text = "Sistemski ID artikla";
             // 
@@ -391,26 +413,29 @@
             // 
             this.textBoxIDKreiranje.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBoxIDKreiranje.Enabled = false;
-            this.textBoxIDKreiranje.Location = new System.Drawing.Point(157, 19);
+            this.textBoxIDKreiranje.Location = new System.Drawing.Point(209, 23);
+            this.textBoxIDKreiranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxIDKreiranje.Name = "textBoxIDKreiranje";
-            this.textBoxIDKreiranje.Size = new System.Drawing.Size(61, 20);
+            this.textBoxIDKreiranje.Size = new System.Drawing.Size(80, 22);
             this.textBoxIDKreiranje.TabIndex = 147;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(246, 55);
+            this.label5.Location = new System.Drawing.Point(328, 68);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 13);
+            this.label5.Size = new System.Drawing.Size(163, 17);
             this.label5.TabIndex = 146;
             this.label5.Text = "Postavi inicijalnu količinu";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(246, 23);
+            this.label6.Location = new System.Drawing.Point(328, 28);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(148, 13);
+            this.label6.Size = new System.Drawing.Size(196, 17);
             this.label6.TabIndex = 145;
             this.label6.Text = "Trenutna količina na skladištu";
             // 
@@ -418,52 +443,58 @@
             // 
             this.textBoxKolicinaPrikazKreiranje.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBoxKolicinaPrikazKreiranje.Enabled = false;
-            this.textBoxKolicinaPrikazKreiranje.Location = new System.Drawing.Point(399, 19);
+            this.textBoxKolicinaPrikazKreiranje.Location = new System.Drawing.Point(532, 23);
+            this.textBoxKolicinaPrikazKreiranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxKolicinaPrikazKreiranje.Name = "textBoxKolicinaPrikazKreiranje";
-            this.textBoxKolicinaPrikazKreiranje.Size = new System.Drawing.Size(75, 20);
+            this.textBoxKolicinaPrikazKreiranje.Size = new System.Drawing.Size(99, 22);
             this.textBoxKolicinaPrikazKreiranje.TabIndex = 144;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(246, 82);
+            this.label9.Location = new System.Drawing.Point(328, 101);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 13);
+            this.label9.Size = new System.Drawing.Size(47, 17);
             this.label9.TabIndex = 143;
             this.label9.Text = "Cijena";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(14, 78);
+            this.label10.Location = new System.Drawing.Point(19, 96);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(62, 13);
+            this.label10.Size = new System.Drawing.Size(83, 17);
             this.label10.TabIndex = 141;
             this.label10.Text = "Vrsta artikla";
             // 
             // textBoxVrstaKreiranje
             // 
             this.textBoxVrstaKreiranje.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxVrstaKreiranje.Location = new System.Drawing.Point(86, 75);
+            this.textBoxVrstaKreiranje.Location = new System.Drawing.Point(115, 92);
+            this.textBoxVrstaKreiranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxVrstaKreiranje.Name = "textBoxVrstaKreiranje";
-            this.textBoxVrstaKreiranje.Size = new System.Drawing.Size(132, 20);
+            this.textBoxVrstaKreiranje.Size = new System.Drawing.Size(175, 22);
             this.textBoxVrstaKreiranje.TabIndex = 140;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(14, 51);
+            this.label11.Location = new System.Drawing.Point(19, 63);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 13);
+            this.label11.Size = new System.Drawing.Size(85, 17);
             this.label11.TabIndex = 139;
             this.label11.Text = "Naziv artikla";
             // 
             // textBoxNazivKreiranje
             // 
             this.textBoxNazivKreiranje.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxNazivKreiranje.Location = new System.Drawing.Point(86, 49);
+            this.textBoxNazivKreiranje.Location = new System.Drawing.Point(115, 60);
+            this.textBoxNazivKreiranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxNazivKreiranje.Name = "textBoxNazivKreiranje";
-            this.textBoxNazivKreiranje.Size = new System.Drawing.Size(132, 20);
+            this.textBoxNazivKreiranje.Size = new System.Drawing.Size(175, 22);
             this.textBoxNazivKreiranje.TabIndex = 138;
             // 
             // groupBoxPretraga
@@ -475,9 +506,11 @@
             this.groupBoxPretraga.Controls.Add(this.textBoxNazivTrazi);
             this.groupBoxPretraga.Controls.Add(this.textBoxBarKodTrazi);
             this.groupBoxPretraga.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBoxPretraga.Location = new System.Drawing.Point(11, 36);
+            this.groupBoxPretraga.Location = new System.Drawing.Point(15, 44);
+            this.groupBoxPretraga.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxPretraga.Name = "groupBoxPretraga";
-            this.groupBoxPretraga.Size = new System.Drawing.Size(638, 179);
+            this.groupBoxPretraga.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxPretraga.Size = new System.Drawing.Size(851, 220);
             this.groupBoxPretraga.TabIndex = 58;
             this.groupBoxPretraga.TabStop = false;
             this.groupBoxPretraga.Text = "Pretraga artikala";
@@ -488,10 +521,11 @@
             this.dataGridViewArtikli.AllowUserToDeleteRows = false;
             this.dataGridViewArtikli.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dataGridViewArtikli.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewArtikli.Location = new System.Drawing.Point(16, 49);
+            this.dataGridViewArtikli.Location = new System.Drawing.Point(21, 60);
+            this.dataGridViewArtikli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewArtikli.Name = "dataGridViewArtikli";
             this.dataGridViewArtikli.ReadOnly = true;
-            this.dataGridViewArtikli.Size = new System.Drawing.Size(600, 115);
+            this.dataGridViewArtikli.Size = new System.Drawing.Size(800, 142);
             this.dataGridViewArtikli.TabIndex = 41;
             // 
             // buttonArtikliTrazi
@@ -499,9 +533,10 @@
             this.buttonArtikliTrazi.BackColor = System.Drawing.Color.LightCyan;
             this.buttonArtikliTrazi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonArtikliTrazi.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonArtikliTrazi.Location = new System.Drawing.Point(493, 22);
+            this.buttonArtikliTrazi.Location = new System.Drawing.Point(657, 24);
+            this.buttonArtikliTrazi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonArtikliTrazi.Name = "buttonArtikliTrazi";
-            this.buttonArtikliTrazi.Size = new System.Drawing.Size(123, 21);
+            this.buttonArtikliTrazi.Size = new System.Drawing.Size(164, 28);
             this.buttonArtikliTrazi.TabIndex = 40;
             this.buttonArtikliTrazi.Text = "Traži ...";
             this.buttonArtikliTrazi.UseVisualStyleBackColor = false;
@@ -509,46 +544,51 @@
             // labelNaziv
             // 
             this.labelNaziv.AutoSize = true;
-            this.labelNaziv.Location = new System.Drawing.Point(288, 25);
+            this.labelNaziv.Location = new System.Drawing.Point(384, 31);
+            this.labelNaziv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNaziv.Name = "labelNaziv";
-            this.labelNaziv.Size = new System.Drawing.Size(34, 13);
+            this.labelNaziv.Size = new System.Drawing.Size(43, 17);
             this.labelNaziv.TabIndex = 39;
             this.labelNaziv.Text = "Naziv";
             // 
             // labelSifraTrazi
             // 
             this.labelSifraTrazi.AutoSize = true;
-            this.labelSifraTrazi.Location = new System.Drawing.Point(13, 25);
+            this.labelSifraTrazi.Location = new System.Drawing.Point(17, 31);
+            this.labelSifraTrazi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSifraTrazi.Name = "labelSifraTrazi";
-            this.labelSifraTrazi.Size = new System.Drawing.Size(73, 13);
+            this.labelSifraTrazi.Size = new System.Drawing.Size(99, 17);
             this.labelSifraTrazi.TabIndex = 38;
             this.labelSifraTrazi.Text = "Šifra (bar kod)";
             // 
             // textBoxNazivTrazi
             // 
             this.textBoxNazivTrazi.BackColor = System.Drawing.Color.LightCyan;
-            this.textBoxNazivTrazi.Location = new System.Drawing.Point(339, 22);
+            this.textBoxNazivTrazi.Location = new System.Drawing.Point(452, 27);
+            this.textBoxNazivTrazi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxNazivTrazi.Name = "textBoxNazivTrazi";
-            this.textBoxNazivTrazi.Size = new System.Drawing.Size(120, 20);
+            this.textBoxNazivTrazi.Size = new System.Drawing.Size(159, 22);
             this.textBoxNazivTrazi.TabIndex = 37;
             // 
             // textBoxBarKodTrazi
             // 
             this.textBoxBarKodTrazi.BackColor = System.Drawing.Color.LightCyan;
-            this.textBoxBarKodTrazi.Location = new System.Drawing.Point(91, 22);
+            this.textBoxBarKodTrazi.Location = new System.Drawing.Point(121, 27);
+            this.textBoxBarKodTrazi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxBarKodTrazi.Name = "textBoxBarKodTrazi";
-            this.textBoxBarKodTrazi.Size = new System.Drawing.Size(120, 20);
+            this.textBoxBarKodTrazi.Size = new System.Drawing.Size(159, 22);
             this.textBoxBarKodTrazi.TabIndex = 36;
             // 
             // FormAdmArtikala
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 396);
+            this.ClientSize = new System.Drawing.Size(883, 487);
             this.Controls.Add(this.tabControlArtikli);
             this.Controls.Add(this.groupBoxPretraga);
             this.Controls.Add(this.labelKorisnikInfo);
             this.Controls.Add(this.menuStrip);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormAdmArtikala";
             this.Text = "ADMINISTRATOR - Administracija artikala";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAdmArtikala_FormClosed);
