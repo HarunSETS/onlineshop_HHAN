@@ -186,6 +186,8 @@ namespace prodaja_HHAN
             textBoxUserAzuriranje.Text = dataGridViewKorisnici.Rows[dataGridViewKorisnici.CurrentCell.RowIndex].Cells["USERNAME"].FormattedValue.ToString();
             maskedTextBoxPass1Azuriranje.Text = dataGridViewKorisnici.Rows[dataGridViewKorisnici.CurrentCell.RowIndex].Cells["pass"].FormattedValue.ToString();
             maskedTextBoxPass2Azuriranje.Text = maskedTextBoxPass1Azuriranje.Text;
+
+            textBoxIDBrisanje.Text = dataGridViewKorisnici.Rows[dataGridViewKorisnici.CurrentCell.RowIndex].Cells["ID"].FormattedValue.ToString();
         }
 
         private void buttonKupcKreiranje_Click(object sender, EventArgs e)
@@ -230,5 +232,32 @@ namespace prodaja_HHAN
             Application.Exit();
         }
 
+        private void buttonBrisanje_Click(object sender, EventArgs e)
+        {
+            if (textBoxIDBrisanje.Text == Program.prijavljeniKupacID)
+            {
+                MessageBox.Show("Korisnik kojeg želite obrisati ste vi pa to nije dozvoljeno!");
+            }
+            else
+            {
+                try
+                {
+                    string upit = "delete from kupci where kupac_id = " + textBoxIDBrisanje.Text;
+                    MySqlConnection con = new MySqlConnection(Program.konekcioniString);
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand(upit, con);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    PrikazKupaca();
+                    MessageBox.Show("Podaci o korisniku obrisani!");
+                }
+                catch (Exception ex)
+                {
+                    errorProvider.SetError(buttonBrisanje, ex.Message);
+                    MessageBox.Show("Nije uspjelo brisanje korisnika jer ima korisnik ima vezane podatke o narudžbama! " +
+                        "Za više informacija pređite mišem preko uskličnika!");
+                }
+            }
+        }
     }
 }
