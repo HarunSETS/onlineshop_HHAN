@@ -61,7 +61,7 @@
             this.MeniToolStripMenuItemGlavniAdmMeni});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(723, 26);
+            this.menuStrip.Size = new System.Drawing.Size(723, 24);
             this.menuStrip.TabIndex = 31;
             this.menuStrip.Text = "Glavni meni";
             // 
@@ -73,20 +73,20 @@
             this.ToolStripMenuItemPregledBrisanjeNarudzbi,
             this.ToolStripMenuItemOdjava});
             this.meniToolStripMenuItem.Name = "meniToolStripMenuItem";
-            this.meniToolStripMenuItem.Size = new System.Drawing.Size(52, 22);
+            this.meniToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.meniToolStripMenuItem.Text = "Meni";
             // 
             // ToolStripMenuItemAdmKupaca
             // 
             this.ToolStripMenuItemAdmKupaca.Name = "ToolStripMenuItemAdmKupaca";
-            this.ToolStripMenuItemAdmKupaca.Size = new System.Drawing.Size(241, 22);
+            this.ToolStripMenuItemAdmKupaca.Size = new System.Drawing.Size(221, 22);
             this.ToolStripMenuItemAdmKupaca.Text = "Administracija korisnika";
             this.ToolStripMenuItemAdmKupaca.Click += new System.EventHandler(this.ToolStripMenuItemAdmKupaca_Click);
             // 
             // ToolStripMenuItemAdmArtikala
             // 
             this.ToolStripMenuItemAdmArtikala.Name = "ToolStripMenuItemAdmArtikala";
-            this.ToolStripMenuItemAdmArtikala.Size = new System.Drawing.Size(241, 22);
+            this.ToolStripMenuItemAdmArtikala.Size = new System.Drawing.Size(221, 22);
             this.ToolStripMenuItemAdmArtikala.Text = "Administracija artikala";
             this.ToolStripMenuItemAdmArtikala.Click += new System.EventHandler(this.ToolStripMenuItemAdmArtikala_Click_1);
             // 
@@ -94,20 +94,20 @@
             // 
             this.ToolStripMenuItemPregledBrisanjeNarudzbi.Enabled = false;
             this.ToolStripMenuItemPregledBrisanjeNarudzbi.Name = "ToolStripMenuItemPregledBrisanjeNarudzbi";
-            this.ToolStripMenuItemPregledBrisanjeNarudzbi.Size = new System.Drawing.Size(241, 22);
+            this.ToolStripMenuItemPregledBrisanjeNarudzbi.Size = new System.Drawing.Size(221, 22);
             this.ToolStripMenuItemPregledBrisanjeNarudzbi.Text = "Pregled i brisanje narudžbi";
             // 
             // ToolStripMenuItemOdjava
             // 
             this.ToolStripMenuItemOdjava.Name = "ToolStripMenuItemOdjava";
-            this.ToolStripMenuItemOdjava.Size = new System.Drawing.Size(241, 22);
+            this.ToolStripMenuItemOdjava.Size = new System.Drawing.Size(221, 22);
             this.ToolStripMenuItemOdjava.Text = "Odjava iz aplikacije";
             this.ToolStripMenuItemOdjava.Click += new System.EventHandler(this.ToolStripMenuItemOdjava_Click);
             // 
             // MeniToolStripMenuItemGlavniAdmMeni
             // 
             this.MeniToolStripMenuItemGlavniAdmMeni.Name = "MeniToolStripMenuItemGlavniAdmMeni";
-            this.MeniToolStripMenuItemGlavniAdmMeni.Size = new System.Drawing.Size(170, 22);
+            this.MeniToolStripMenuItemGlavniAdmMeni.Size = new System.Drawing.Size(152, 20);
             this.MeniToolStripMenuItemGlavniAdmMeni.Text = "Povratak na glavni ekran";
             this.MeniToolStripMenuItemGlavniAdmMeni.Click += new System.EventHandler(this.MeniToolStripMenuItemGlavniAdmMeni_Click);
             // 
@@ -119,7 +119,7 @@
             this.labelKorisnikInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.labelKorisnikInfo.Location = new System.Drawing.Point(401, 5);
             this.labelKorisnikInfo.Name = "labelKorisnikInfo";
-            this.labelKorisnikInfo.Size = new System.Drawing.Size(150, 18);
+            this.labelKorisnikInfo.Size = new System.Drawing.Size(134, 14);
             this.labelKorisnikInfo.TabIndex = 32;
             this.labelKorisnikInfo.Text = "prijavljeni korisnik info";
             // 
@@ -141,6 +141,7 @@
             this.dataGridViewNarudzbe.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dataGridViewNarudzbe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewNarudzbe.Location = new System.Drawing.Point(15, 23);
+            this.dataGridViewNarudzbe.MultiSelect = false;
             this.dataGridViewNarudzbe.Name = "dataGridViewNarudzbe";
             this.dataGridViewNarudzbe.ReadOnly = true;
             this.dataGridViewNarudzbe.RowHeadersVisible = false;
@@ -179,7 +180,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(12, 34);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(131, 17);
+            this.label8.Size = new System.Drawing.Size(110, 13);
             this.label8.TabIndex = 77;
             this.label8.Text = "Sistemski ID narudžbe";
             // 
@@ -189,7 +190,7 @@
             this.textBoxNazivAzuriranje.Enabled = false;
             this.textBoxNazivAzuriranje.Location = new System.Drawing.Point(148, 31);
             this.textBoxNazivAzuriranje.Name = "textBoxNazivAzuriranje";
-            this.textBoxNazivAzuriranje.Size = new System.Drawing.Size(132, 24);
+            this.textBoxNazivAzuriranje.Size = new System.Drawing.Size(132, 21);
             this.textBoxNazivAzuriranje.TabIndex = 76;
             // 
             // label1
@@ -197,7 +198,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(283, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 17);
+            this.label1.Size = new System.Drawing.Size(93, 13);
             this.label1.TabIndex = 62;
             this.label1.Text = "Redoslijed prikaza";
             // 
@@ -214,7 +215,7 @@
             "Ime i prezime kupca (obrnuto abecedno)"});
             this.comboBoxSort.Location = new System.Drawing.Point(407, 46);
             this.comboBoxSort.Name = "comboBoxSort";
-            this.comboBoxSort.Size = new System.Drawing.Size(288, 25);
+            this.comboBoxSort.Size = new System.Drawing.Size(288, 21);
             this.comboBoxSort.TabIndex = 63;
             this.comboBoxSort.SelectedIndexChanged += new System.EventHandler(this.comboBoxSort_SelectedIndexChanged);
             // 
@@ -226,7 +227,7 @@
             // 
             // FormAdmNarudzbi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(723, 396);
             this.Controls.Add(this.comboBoxSort);

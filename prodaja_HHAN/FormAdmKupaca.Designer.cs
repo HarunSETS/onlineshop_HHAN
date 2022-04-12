@@ -739,7 +739,7 @@
             this.tabPageBrisanje.Name = "tabPageBrisanje";
             this.tabPageBrisanje.Size = new System.Drawing.Size(675, 174);
             this.tabPageBrisanje.TabIndex = 2;
-            this.tabPageBrisanje.Text = "Brisanje korisnika";
+            this.tabPageBrisanje.Text = "Brisanje korisnika koji nema vezane narudžbe";
             this.tabPageBrisanje.UseVisualStyleBackColor = true;
             // 
             // buttonBrisanje
@@ -763,6 +763,7 @@
             this.textBoxIDBrisanje.Name = "textBoxIDBrisanje";
             this.textBoxIDBrisanje.Size = new System.Drawing.Size(61, 21);
             this.textBoxIDBrisanje.TabIndex = 76;
+            this.textBoxIDBrisanje.TextChanged += new System.EventHandler(this.textBoxIDBrisanje_TextChanged);
             // 
             // label20
             // 
@@ -772,6 +773,7 @@
             this.label20.Size = new System.Drawing.Size(109, 13);
             this.label20.TabIndex = 77;
             this.label20.Text = "Sistemski ID korisnika";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // errorProvider
             // 

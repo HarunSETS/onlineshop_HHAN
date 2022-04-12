@@ -135,8 +135,10 @@
             this.dataGridViewArtikli.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dataGridViewArtikli.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewArtikli.Location = new System.Drawing.Point(16, 24);
+            this.dataGridViewArtikli.MultiSelect = false;
             this.dataGridViewArtikli.Name = "dataGridViewArtikli";
             this.dataGridViewArtikli.ReadOnly = true;
+            this.dataGridViewArtikli.RowHeadersVisible = false;
             this.dataGridViewArtikli.Size = new System.Drawing.Size(221, 191);
             this.dataGridViewArtikli.TabIndex = 41;
             // 
@@ -178,8 +180,10 @@
             this.dataGridViewKorpa.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dataGridViewKorpa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewKorpa.Location = new System.Drawing.Point(10, 24);
+            this.dataGridViewKorpa.MultiSelect = false;
             this.dataGridViewKorpa.Name = "dataGridViewKorpa";
             this.dataGridViewKorpa.ReadOnly = true;
+            this.dataGridViewKorpa.RowHeadersVisible = false;
             this.dataGridViewKorpa.Size = new System.Drawing.Size(267, 184);
             this.dataGridViewKorpa.TabIndex = 42;
             // 
