@@ -158,6 +158,22 @@ namespace prodaja_HHAN
             con.Close();
         }
 
+        public static void insertPostaviInicijalnoStanjeArtiklaNaSkladistu(int artiklID, int inicijalnoStanje)
+        {
+            // kreira inicijalni zapis o stanju artikla na skladištu
+
+            string upit = " insert into skladiste(artikal_id, kolicina_stanje)" +
+                          " values (" + artiklID + ", " + inicijalnoStanje + ")";
+
+            MySqlConnection con = new MySqlConnection(konekcioniString);
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand(upit, con);
+            cmd.ExecuteNonQuery();
+
+            con.Close();
+        }
+
+        
         // ======== stavke narudžbe i artikli
 
         public static int vratiKolicinuArtiklaUNarudzbi(int narudzbaID, int artiklID)
@@ -308,6 +324,20 @@ namespace prodaja_HHAN
             con.Close();
         }
 
+        public static void brisanjeKupca(int kupacID)
+        {
+            // briše podatke o kupcu
+            // brisanje će biti moguće samo ako kupac nema narudžbi
+
+            string upit = "delete from kupci where kupac_id = " + kupacID;
+
+            MySqlConnection con = new MySqlConnection(Program.konekcioniString);
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand(upit, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
         // ======== artikli 
 
         public static void insertArtikla(string barKod, string nazivArtikla, string vrstaArtikla, double cijena)
@@ -322,6 +352,7 @@ namespace prodaja_HHAN
             con.Open();
             MySqlCommand cmd = new MySqlCommand(upit, con);
             cmd.ExecuteNonQuery();
+            
             con.Close();
         }
 
@@ -342,6 +373,35 @@ namespace prodaja_HHAN
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+        public static int vratiIDArtiklaNaOsnovuBarKoda(string barKod)
+        {
+            // vraća ID artikla na osnovu njegovog bar koda
+            // koristi se kada se kreira novi artikl da bi se saznao njegov ID jer se ID generiše automatski od strane baze (kao auto inkrement polje)
+            // bar kod je unique polje u bazi tako da se neće desiti da u bazi postoje dva artikla sa istim bar kodom
+
+            int rezultat;
+
+            string upit = " select artikal_id from artikli" +
+                          " where bar_kod = '" + barKod + "'";
+
+            MySqlConnection con = new MySqlConnection(konekcioniString);
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand(upit, con);
+
+            MySqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows)
+                rezultat = System.Convert.ToInt32(reader["artikal_id"].ToString());
+            else
+                rezultat = 0;
+
+            reader.Close();
+            con.Close();
+
+            return rezultat;
+        }
+
 
         // Druge razne korisne procedure
         // ==================================================

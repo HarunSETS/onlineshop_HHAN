@@ -59,7 +59,7 @@
             this.MeniToolStripMenuItemGlavniKupMeni});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(710, 26);
+            this.menuStrip.Size = new System.Drawing.Size(710, 24);
             this.menuStrip.TabIndex = 34;
             this.menuStrip.Text = "Glavni meni";
             // 
@@ -70,13 +70,13 @@
             this.ToolStripMenuItemPregledNarudzbi,
             this.ToolStripMenuItemOdjava});
             this.meniToolStripMenuItem.Name = "meniToolStripMenuItem";
-            this.meniToolStripMenuItem.Size = new System.Drawing.Size(52, 22);
+            this.meniToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.meniToolStripMenuItem.Text = "Meni";
             // 
             // ToolStripMenuItemKreiranjeNarudzbe
             // 
             this.ToolStripMenuItemKreiranjeNarudzbe.Name = "ToolStripMenuItemKreiranjeNarudzbe";
-            this.ToolStripMenuItemKreiranjeNarudzbe.Size = new System.Drawing.Size(194, 22);
+            this.ToolStripMenuItemKreiranjeNarudzbe.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItemKreiranjeNarudzbe.Text = "Kreiranje narudžbi";
             this.ToolStripMenuItemKreiranjeNarudzbe.Click += new System.EventHandler(this.ToolStripMenuItemKreiranjeNarudzbe_Click);
             // 
@@ -84,20 +84,20 @@
             // 
             this.ToolStripMenuItemPregledNarudzbi.Enabled = false;
             this.ToolStripMenuItemPregledNarudzbi.Name = "ToolStripMenuItemPregledNarudzbi";
-            this.ToolStripMenuItemPregledNarudzbi.Size = new System.Drawing.Size(194, 22);
+            this.ToolStripMenuItemPregledNarudzbi.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItemPregledNarudzbi.Text = "Pregled narudžbi";
             // 
             // ToolStripMenuItemOdjava
             // 
             this.ToolStripMenuItemOdjava.Name = "ToolStripMenuItemOdjava";
-            this.ToolStripMenuItemOdjava.Size = new System.Drawing.Size(194, 22);
+            this.ToolStripMenuItemOdjava.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItemOdjava.Text = "Odjava iz aplikacije";
             this.ToolStripMenuItemOdjava.Click += new System.EventHandler(this.ToolStripMenuItemOdjava_Click);
             // 
             // MeniToolStripMenuItemGlavniKupMeni
             // 
             this.MeniToolStripMenuItemGlavniKupMeni.Name = "MeniToolStripMenuItemGlavniKupMeni";
-            this.MeniToolStripMenuItemGlavniKupMeni.Size = new System.Drawing.Size(170, 22);
+            this.MeniToolStripMenuItemGlavniKupMeni.Size = new System.Drawing.Size(152, 20);
             this.MeniToolStripMenuItemGlavniKupMeni.Text = "Povratak na glavni ekran";
             this.MeniToolStripMenuItemGlavniKupMeni.Click += new System.EventHandler(this.MeniToolStripMenuItemGlavniKupMeni_Click);
             // 
@@ -109,7 +109,7 @@
             this.labelKorisnikInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.labelKorisnikInfo.Location = new System.Drawing.Point(381, 5);
             this.labelKorisnikInfo.Name = "labelKorisnikInfo";
-            this.labelKorisnikInfo.Size = new System.Drawing.Size(150, 18);
+            this.labelKorisnikInfo.Size = new System.Drawing.Size(134, 14);
             this.labelKorisnikInfo.TabIndex = 35;
             this.labelKorisnikInfo.Text = "prijavljeni korisnik info";
             // 
@@ -138,7 +138,7 @@
             this.textBoxTotal.Enabled = false;
             this.textBoxTotal.Location = new System.Drawing.Point(570, 243);
             this.textBoxTotal.Name = "textBoxTotal";
-            this.textBoxTotal.Size = new System.Drawing.Size(93, 24);
+            this.textBoxTotal.Size = new System.Drawing.Size(93, 21);
             this.textBoxTotal.TabIndex = 74;
             // 
             // label3
@@ -146,7 +146,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(369, 247);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(195, 17);
+            this.label3.Size = new System.Drawing.Size(159, 13);
             this.label3.TabIndex = 45;
             this.label3.Text = "Total za odabranu narudžbu (KM)";
             // 
@@ -156,7 +156,7 @@
             this.label2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(338, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 33);
+            this.label2.Size = new System.Drawing.Size(37, 26);
             this.label2.TabIndex = 44;
             this.label2.Text = "= >";
             // 
@@ -165,7 +165,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(393, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 17);
+            this.label1.Size = new System.Drawing.Size(159, 13);
             this.label1.TabIndex = 43;
             this.label1.Text = "Prikaz stavki odabrane narudžbe";
             // 
@@ -176,8 +176,10 @@
             this.dataGridViewNarudzbeStavke.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dataGridViewNarudzbeStavke.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewNarudzbeStavke.Location = new System.Drawing.Point(396, 51);
+            this.dataGridViewNarudzbeStavke.MultiSelect = false;
             this.dataGridViewNarudzbeStavke.Name = "dataGridViewNarudzbeStavke";
             this.dataGridViewNarudzbeStavke.ReadOnly = true;
+            this.dataGridViewNarudzbeStavke.RowHeadersVisible = false;
             this.dataGridViewNarudzbeStavke.Size = new System.Drawing.Size(267, 184);
             this.dataGridViewNarudzbeStavke.TabIndex = 42;
             // 
@@ -188,8 +190,10 @@
             this.dataGridViewNarudzbe.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dataGridViewNarudzbe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewNarudzbe.Location = new System.Drawing.Point(16, 24);
+            this.dataGridViewNarudzbe.MultiSelect = false;
             this.dataGridViewNarudzbe.Name = "dataGridViewNarudzbe";
             this.dataGridViewNarudzbe.ReadOnly = true;
+            this.dataGridViewNarudzbe.RowHeadersVisible = false;
             this.dataGridViewNarudzbe.Size = new System.Drawing.Size(301, 211);
             this.dataGridViewNarudzbe.TabIndex = 41;
             // 
@@ -210,7 +214,7 @@
             this.labelNarudzbaIDTrazi.AutoSize = true;
             this.labelNarudzbaIDTrazi.Location = new System.Drawing.Point(13, 247);
             this.labelNarudzbaIDTrazi.Name = "labelNarudzbaIDTrazi";
-            this.labelNarudzbaIDTrazi.Size = new System.Drawing.Size(131, 17);
+            this.labelNarudzbaIDTrazi.Size = new System.Drawing.Size(110, 13);
             this.labelNarudzbaIDTrazi.TabIndex = 38;
             this.labelNarudzbaIDTrazi.Text = "Sistemski ID narudžbe";
             // 
@@ -219,12 +223,12 @@
             this.textBoxNarudzbaIDTrazi.BackColor = System.Drawing.Color.LightCyan;
             this.textBoxNarudzbaIDTrazi.Location = new System.Drawing.Point(148, 243);
             this.textBoxNarudzbaIDTrazi.Name = "textBoxNarudzbaIDTrazi";
-            this.textBoxNarudzbaIDTrazi.Size = new System.Drawing.Size(80, 24);
+            this.textBoxNarudzbaIDTrazi.Size = new System.Drawing.Size(80, 21);
             this.textBoxNarudzbaIDTrazi.TabIndex = 36;
             // 
             // FormKupPregledNarudzbi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(710, 332);
             this.Controls.Add(this.groupBoxPretraga);
