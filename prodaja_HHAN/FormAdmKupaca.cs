@@ -68,11 +68,11 @@ namespace prodaja_HHAN
 
                 if (textBoxImeTrazi.Text != "")
                 {
-                    upit = upit + " and k.ime like '%" + textBoxImeTrazi.Text + "%' ";
+                    upit = upit + " and k.ime like '%" + textBoxImeTrazi.Text.Trim() + "%' ";
                 }
                 if (textBoxPrezimeTrazi.Text != "")
                 {
-                    upit = upit + " and k.prezime like '%" + textBoxPrezimeTrazi.Text + "%' ";
+                    upit = upit + " and k.prezime like '%" + textBoxPrezimeTrazi.Text.Trim() + "%' ";
                 }
 
                 upit = upit + " order by k.kupac_id";
@@ -156,12 +156,12 @@ namespace prodaja_HHAN
                             System.Convert.ToInt32(textBoxIDAzuriranje.Text),
                             textBoxUserAzuriranje.Text,
                             maskedTextBoxPass1Azuriranje.Text,
-                            comboBoxTipKorisnikaAzuriranje.Text,
-                            textBoxImeAzuriranje.Text,
-                            textBoxPrezimeAzuriranje.Text,
-                            textBoxGradAzuriranje.Text,
-                            textBoxAdresaAzuriranje.Text,
-                            textBoxTelefonAzuriranje.Text
+                            comboBoxTipKorisnikaAzuriranje.Text.Trim(),
+                            textBoxImeAzuriranje.Text.Trim(),
+                            textBoxPrezimeAzuriranje.Text.Trim(),
+                            textBoxGradAzuriranje.Text.Trim(),
+                            textBoxAdresaAzuriranje.Text.Trim(),
+                            textBoxTelefonAzuriranje.Text.Trim()
                         );
                     
                     PrikazKupaca();
@@ -215,14 +215,14 @@ namespace prodaja_HHAN
                 try
                 {
                     Program.insertKupca(
-                            textBoxUserKreiranje.Text,
+                            textBoxUserKreiranje.Text.Trim(),
                             maskedTextBoxPass1Kreiranje.Text,
                             comboBoxTipKorisnikaKreiranje.Text,
-                            textBoxImeKreiranje.Text,
-                            textBoxPrezimeKreiranje.Text,
-                            textBoxGradKreiranje.Text,
-                            textBoxAdresaKreiranje.Text,
-                            textBoxTelefonKreiranje.Text
+                            textBoxImeKreiranje.Text.Trim(),
+                            textBoxPrezimeKreiranje.Text.Trim(),
+                            textBoxGradKreiranje.Text.Trim(),
+                            textBoxAdresaKreiranje.Text.Trim(),
+                            textBoxTelefonKreiranje.Text.Trim()
                         );
 
                     PrikazKupaca();

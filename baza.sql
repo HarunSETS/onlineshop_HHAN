@@ -42,16 +42,19 @@ insert into kupci(kupac_id, user, pass, tip_korisnika_id, ime, prezime, adresa, 
 values (1, 'harun.tabak', 'harun', 'ADM', 'Harun', 'Tabak', 'Milana preloga 13', 'Sarajevo', '061298699');
 
 insert into kupci(kupac_id, user, pass, tip_korisnika_id, ime, prezime, adresa, grad, telefon)  
-values (2, 'hamza.dedovic', 'hamza', 'ADM', 'Hamza', 'Dedovic', 'dopuniti...', 'Sarajevo', 'dopuniti...');
+values (2, 'hamza.dedovic', 'hamza', 'ADM', 'Hamza', 'Dedovic', 'Binjezevo 9', 'Sarajevo', '0603066779');
 
 insert into kupci(kupac_id, user, pass, tip_korisnika_id, ime, prezime, adresa, grad, telefon)  
-values (3, 'adi.drakovac', 'adi', 'KUP', 'Adi', 'Drakovac', 'dopuniti...', 'Sarajevo', 'dopuniti...');
+values (3, 'adi.drakovac', 'adi', 'KUP', 'Adi', 'Drakovac', 'Sulje Jahića 81', 'Sarajevo', '062009537');
 
 insert into kupci(kupac_id, user, pass, tip_korisnika_id, ime, prezime, adresa, grad, telefon)  
-values (4, 'nedim.redzovic', 'nedim', 'KUP', 'Nedim', 'Redžović', 'dopuniti...', 'Sarajevo', 'dopuniti...');
+values (4, 'nedim.redzovic', 'nedim', 'KUP', 'Nedim', 'Redžović', 'Josipa Broza', 'Hrasnica', '069696696');
 
 insert into kupci(kupac_id, user, pass, tip_korisnika_id, ime, prezime, adresa, grad, telefon)  
-values (5, 'mujo.mujic', 'mujo', 'REV', 'Mujo', 'Mujić', 'dopuniti...', 'Mostar', 'dopuniti...');
+values (5, 'mujo.mujic', 'mujo', 'REV', 'Mujo', 'Mujić', 'Branka Čopića 57', 'Mostar', '063546879');
+
+insert into kupci(kupac_id, user, pass, tip_korisnika_id, ime, prezime, adresa, grad, telefon)  
+values (6, 'adnan.delic', 'adnan', 'ADM', 'Adnan', 'Delić', 'Safeta Zajke 10', 'Mostar', '065456456');
 
 
 create table narudzbenice (
@@ -79,7 +82,7 @@ create table artikli (
   vrsta_artikla varchar(100) not null,
   cijena double not null,
   primary key pk_artikli (artikal_id),
-  constraint uk_artikli unique (bar_kod),
+  constraint uk_artikli unique (bar_kod)
 );
 
 insert into artikli(artikal_id, bar_kod, naziv_artikla, vrsta_artikla, cijena) values (1, '00001', 'Xiaomi Mi 8', 'Mobitel', 750.80);

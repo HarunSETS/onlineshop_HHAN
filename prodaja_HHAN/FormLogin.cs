@@ -21,7 +21,7 @@ namespace prodaja_HHAN
         {
             errorProvider.Clear();
 
-            String korisnickoIme = textBoxKorisnickoIme.Text;
+            String korisnickoIme = textBoxKorisnickoIme.Text.Trim();
 
             String query = 
                 " select k.kupac_id, k.pass, k.tip_korisnika_id, concat(k.ime, ' ', k.prezime) as ime_prezime, t.pozdravna_poruka, t.naziv as naziv_tipa_korisnika" +

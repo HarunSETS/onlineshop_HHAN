@@ -367,9 +367,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(227, 131);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 13);
+            this.label7.Size = new System.Drawing.Size(82, 13);
             this.label7.TabIndex = 72;
-            this.label7.Text = "Tajna riječ (ponovi)";
+            this.label7.Text = "Lozinka (ponovi)";
             // 
             // maskedTextBoxPass2Azuriranje
             // 
@@ -394,9 +394,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(227, 104);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 13);
+            this.label6.Size = new System.Drawing.Size(42, 13);
             this.label6.TabIndex = 69;
-            this.label6.Text = "Tajna riječ";
+            this.label6.Text = "Lozinka";
             // 
             // label5
             // 
@@ -597,9 +597,9 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(227, 131);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(95, 13);
+            this.label12.Size = new System.Drawing.Size(82, 13);
             this.label12.TabIndex = 113;
-            this.label12.Text = "Tajna riječ (ponovi)";
+            this.label12.Text = "Lozinka (ponovi)";
             // 
             // maskedTextBoxPass2Kreiranje
             // 
@@ -624,9 +624,9 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(227, 104);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(55, 13);
+            this.label13.Size = new System.Drawing.Size(42, 13);
             this.label13.TabIndex = 110;
-            this.label13.Text = "Tajna riječ";
+            this.label13.Text = "Lozinka";
             // 
             // label14
             // 
