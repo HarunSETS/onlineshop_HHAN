@@ -50,7 +50,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MySql.Data">
-      <HintPath>..\..\Vjezba_26_tabelarni_prikaz_podataka\Vjezba_26_tabelarni_prikaz_podataka\bin\Debug\MySql.Data.dll</HintPath>
+      <HintPath>.\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
