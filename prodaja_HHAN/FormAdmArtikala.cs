@@ -75,11 +75,11 @@ namespace prodaja_HHAN
 
                 if (textBoxBarKodTrazi.Text != "")
                 {
-                    upit = upit + " and a.bar_kod like '%" + textBoxBarKodTrazi.Text + "%' ";
+                    upit = upit + " and a.bar_kod like '%" + textBoxBarKodTrazi.Text.Trim() + "%' ";
                 }
                 if (textBoxNazivTrazi.Text != "")
                 {
-                    upit = upit + " and a.naziv_artikla like '%" + textBoxNazivTrazi.Text + "%' ";
+                    upit = upit + " and a.naziv_artikla like '%" + textBoxNazivTrazi.Text.Trim() + "%' ";
                 }
 
                 upit = upit + " order by a.artikal_id";
@@ -137,9 +137,9 @@ namespace prodaja_HHAN
                     // Ažuriranje podataka o artiklu
                     Program.updateArtikla(
                             System.Convert.ToInt32(textBoxIDAzuriranje.Text),
-                            textBoxBarKodAzuriranje.Text,
-                            textBoxNazivAzuriranje.Text,
-                            textBoxVrstaAzuriranje.Text,
+                            textBoxBarKodAzuriranje.Text.Trim(),
+                            textBoxNazivAzuriranje.Text.Trim(),
+                            textBoxVrstaAzuriranje.Text.Trim(),
                             System.Convert.ToDouble(numericUpDownCijenaAzuriranje.Text)
                         );
 
@@ -183,9 +183,9 @@ namespace prodaja_HHAN
                 {
                     // Kreriranje novog artikla
                     Program.insertArtikla(
-                            textBoxBarKodKreiranje.Text,
-                            textBoxNazivKreiranje.Text,
-                            textBoxVrstaKreiranje.Text,
+                            textBoxBarKodKreiranje.Text.Trim(),
+                            textBoxNazivKreiranje.Text.Trim(),
+                            textBoxVrstaKreiranje.Text.Trim(),
                             System.Convert.ToDouble(numericUpDownCijenaKreiranje.Text)
                         );
 
