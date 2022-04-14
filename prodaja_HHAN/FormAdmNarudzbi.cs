@@ -50,7 +50,9 @@ namespace prodaja_HHAN
         private void FormAdmNarudzbi_Load(object sender, EventArgs e)
         {
             labelKorisnikInfo.Text = Program.kupacInfoPrikaz;
+            // Formatiraj ispis prikaz datuma
             OsvjeziGridNarudzbi();
+            dataGridViewNarudzbe.Columns["DATUM"].DefaultCellStyle.Format = "dd.mm.yyyy   hh:mm:ss";
         }
 
         private void FormAdmNarudzbi_FormClosed(object sender, FormClosedEventArgs e)

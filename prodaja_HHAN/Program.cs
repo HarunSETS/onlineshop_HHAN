@@ -176,6 +176,34 @@ namespace prodaja_HHAN
         
         // ======== stavke narudžbe i artikli
 
+        public static double vratiUkupnuCijenuNarudzbe(int narudzbaID)
+        {
+            // vraća ukupnu cijenu narudžbe <narudzbaID>
+
+            double rezultat;
+
+            string upit = " select sum(round(a.cijena * s.kolicina, 2)) as UkupnoKM " +
+                          " from stavke_narudzbenica s, artikli a" +
+                          " where s.artikal_id = a.artikal_id " + 
+                          " and s.narudzbenica_id = " + narudzbaID;
+
+            MySqlConnection con = new MySqlConnection(konekcioniString);
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand(upit, con);
+
+            MySqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows)
+                rezultat = System.Convert.ToDouble(reader["UkupnoKM"].ToString());
+            else
+                rezultat = 0;
+
+            reader.Close();
+            con.Close();
+
+            return rezultat;
+        }
+
         public static int vratiKolicinuArtiklaUNarudzbi(int narudzbaID, int artiklID)
         {
             // vraća količinu artikla <artiklID> iz stavki narudzbe <narudzbaID>

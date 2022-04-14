@@ -15,13 +15,13 @@ create table tipovi_korisnika (
 );
 
 insert into tipovi_korisnika(tip_korisnika_id, naziv, pozdravna_poruka)  
-values ('ADM', 'Administrator', 'Želimo vam ugodno administriranje aplikacije. (Možete administrirati kupce i artikle, a možete i pregledati narudžbe svih kupaca ili ih čak i obrisati.)');
+values ('ADM', 'Administrator', 'Zelimo vam ugodno administriranje aplikacije. (Mozete administrirati kupce i artikle, a mozete i pregledati narudzbe svih kupaca ili ih cak i obrisati.)');
 
 insert into tipovi_korisnika(tip_korisnika_id, naziv, pozdravna_poruka)  
-values ('KUP', 'Kupac', 'Želimo vam ugodnu kupovinu. (Možete kreirati novu narudžbu ili pregledati svoje ranije narudžbe.)');
+values ('KUP', 'Kupac', 'zelimo vam ugodnu kupovinu. (Mozete kreirati novu narudzbu ili pregledati svoje ranije narudzbe.)');
 
 insert into tipovi_korisnika(tip_korisnika_id, naziv, pozdravna_poruka)  
-values ('REV', 'Računovođa', 'Uloga trenutno nije podržana!!!');
+values ('REV', 'Racunovoda', 'Uloga trenutno nije podrzana!!!');
 
 create table kupci (
   kupac_id int not null auto_increment,
@@ -45,16 +45,16 @@ insert into kupci(kupac_id, user, pass, tip_korisnika_id, ime, prezime, adresa, 
 values (2, 'hamza.dedovic', 'hamza', 'ADM', 'Hamza', 'Dedovic', 'Binjezevo 9', 'Sarajevo', '0603066779');
 
 insert into kupci(kupac_id, user, pass, tip_korisnika_id, ime, prezime, adresa, grad, telefon)  
-values (3, 'adi.drakovac', 'adi', 'KUP', 'Adi', 'Drakovac', 'Sulje Jahića 81', 'Sarajevo', '062009537');
+values (3, 'adi.drakovac', 'adi', 'KUP', 'Adi', 'Drakovac', 'Sulje Jahica 81', 'Sarajevo', '062009537');
 
 insert into kupci(kupac_id, user, pass, tip_korisnika_id, ime, prezime, adresa, grad, telefon)  
-values (4, 'nedim.redzovic', 'nedim', 'KUP', 'Nedim', 'Redžović', 'Josipa Broza', 'Hrasnica', '069696696');
+values (4, 'nedim.redzovic', 'nedim', 'KUP', 'Nedim', 'Redzovic', 'Josipa Broza', 'Hrasnica', '069696696');
 
 insert into kupci(kupac_id, user, pass, tip_korisnika_id, ime, prezime, adresa, grad, telefon)  
-values (5, 'mujo.mujic', 'mujo', 'REV', 'Mujo', 'Mujić', 'Branka Čopića 57', 'Mostar', '063546879');
+values (5, 'mujo.mujic', 'mujo', 'REV', 'Mujo', 'Mujic', 'Branka Copica 57', 'Mostar', '063546879');
 
 insert into kupci(kupac_id, user, pass, tip_korisnika_id, ime, prezime, adresa, grad, telefon)  
-values (6, 'adnan.delic', 'adnan', 'ADM', 'Adnan', 'Delić', 'Safeta Zajke 10', 'Mostar', '061234567');
+values (6, 'adnan.delic', 'adnan', 'ADM', 'Adnan', 'Delic', 'Safeta Zajke 10', 'Mostar', '061234567');
 
 
 create table narudzbenice (
@@ -91,7 +91,7 @@ create table artikli (
 insert into artikli(artikal_id, bar_kod, naziv_artikla, vrsta_artikla, cijena) values (1, '00001', 'Xiaomi Mi 8', 'Mobitel', 750.80);
 insert into artikli(artikal_id, bar_kod, naziv_artikla, vrsta_artikla, cijena) values (2, '00002', 'Galaxy Note 10', 'Mobitel', 1020.00);
 insert into artikli(artikal_id, bar_kod, naziv_artikla, vrsta_artikla, cijena) values (3, '00003', 'Keabord proffesional 12R', 'Tastatura', 103.50);
-insert into artikli(artikal_id, bar_kod, naziv_artikla, vrsta_artikla, cijena) values (4, '00004', 'Mouse optical Vox', 'Miš', 9.99);
+insert into artikli(artikal_id, bar_kod, naziv_artikla, vrsta_artikla, cijena) values (4, '00004', 'Mouse optical Vox', 'Mis', 9.99);
 insert into artikli(artikal_id, bar_kod, naziv_artikla, vrsta_artikla, cijena) values (5, '00005', 'Kingstone USB Stick 8 GB', 'USB', 10.00);
 insert into artikli(artikal_id, bar_kod, naziv_artikla, vrsta_artikla, cijena) values (6, '00006', 'Kingstone USB Stick 16 GB', 'USB', 14.50);
 insert into artikli(artikal_id, bar_kod, naziv_artikla, vrsta_artikla, cijena) values (7, '00007', 'Kingstone USB Stick 32 GB', 'USB', 20.99);

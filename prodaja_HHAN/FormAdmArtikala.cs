@@ -15,8 +15,8 @@ namespace prodaja_HHAN
         public FormAdmArtikala()
         {
             InitializeComponent();
-            numericUpDownCijenaAzuriranje.Controls.RemoveAt(0); //uklanja strelice sa numericUoDown kompoente za cijenu artikla
-            numericUpDownCijenaKreiranje.Controls.RemoveAt(0); //uklanja strelice sa numericUoDown kompoente za cijenu artikla
+            numericUpDownCijenaAzuriranje.Controls.RemoveAt(0); //uklanja strelice sa numericUpDown kompoente za cijenu artikla
+            numericUpDownCijenaKreiranje.Controls.RemoveAt(0); //uklanja strelice sa numericUpDown kompoente za cijenu artikla
         }
 
         private void MeniToolStripMenuItemGlavniAdmMeni_Click(object sender, EventArgs e)
