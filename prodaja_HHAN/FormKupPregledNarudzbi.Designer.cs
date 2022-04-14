@@ -36,6 +36,7 @@
             this.MeniToolStripMenuItemGlavniKupMeni = new System.Windows.Forms.ToolStripMenuItem();
             this.labelKorisnikInfo = new System.Windows.Forms.Label();
             this.groupBoxPretraga = new System.Windows.Forms.GroupBox();
+            this.numericUpDownID = new System.Windows.Forms.NumericUpDown();
             this.textBoxTotal = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,9 +45,9 @@
             this.dataGridViewNarudzbe = new System.Windows.Forms.DataGridView();
             this.buttonKupciTrazi = new System.Windows.Forms.Button();
             this.labelNarudzbaIDTrazi = new System.Windows.Forms.Label();
-            this.textBoxNarudzbaIDTrazi = new System.Windows.Forms.TextBox();
             this.menuStrip.SuspendLayout();
             this.groupBoxPretraga.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNarudzbeStavke)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNarudzbe)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +60,7 @@
             this.MeniToolStripMenuItemGlavniKupMeni});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(710, 24);
+            this.menuStrip.Size = new System.Drawing.Size(934, 24);
             this.menuStrip.TabIndex = 34;
             this.menuStrip.Text = "Glavni meni";
             // 
@@ -107,7 +108,7 @@
             this.labelKorisnikInfo.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.labelKorisnikInfo.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKorisnikInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.labelKorisnikInfo.Location = new System.Drawing.Point(381, 5);
+            this.labelKorisnikInfo.Location = new System.Drawing.Point(749, 5);
             this.labelKorisnikInfo.Name = "labelKorisnikInfo";
             this.labelKorisnikInfo.Size = new System.Drawing.Size(134, 14);
             this.labelKorisnikInfo.TabIndex = 35;
@@ -115,6 +116,7 @@
             // 
             // groupBoxPretraga
             // 
+            this.groupBoxPretraga.Controls.Add(this.numericUpDownID);
             this.groupBoxPretraga.Controls.Add(this.textBoxTotal);
             this.groupBoxPretraga.Controls.Add(this.label3);
             this.groupBoxPretraga.Controls.Add(this.label2);
@@ -123,28 +125,42 @@
             this.groupBoxPretraga.Controls.Add(this.dataGridViewNarudzbe);
             this.groupBoxPretraga.Controls.Add(this.buttonKupciTrazi);
             this.groupBoxPretraga.Controls.Add(this.labelNarudzbaIDTrazi);
-            this.groupBoxPretraga.Controls.Add(this.textBoxNarudzbaIDTrazi);
             this.groupBoxPretraga.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxPretraga.Location = new System.Drawing.Point(12, 36);
             this.groupBoxPretraga.Name = "groupBoxPretraga";
-            this.groupBoxPretraga.Size = new System.Drawing.Size(683, 281);
+            this.groupBoxPretraga.Size = new System.Drawing.Size(893, 281);
             this.groupBoxPretraga.TabIndex = 39;
             this.groupBoxPretraga.TabStop = false;
             this.groupBoxPretraga.Text = "Pregled vaših ranijih narudžbi";
+            // 
+            // numericUpDownID
+            // 
+            this.numericUpDownID.BackColor = System.Drawing.SystemColors.Info;
+            this.numericUpDownID.Location = new System.Drawing.Point(140, 244);
+            this.numericUpDownID.Maximum = new decimal(new int[] {
+            1410065407,
+            2,
+            0,
+            0});
+            this.numericUpDownID.Name = "numericUpDownID";
+            this.numericUpDownID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.numericUpDownID.Size = new System.Drawing.Size(90, 21);
+            this.numericUpDownID.TabIndex = 154;
             // 
             // textBoxTotal
             // 
             this.textBoxTotal.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBoxTotal.Enabled = false;
-            this.textBoxTotal.Location = new System.Drawing.Point(570, 243);
+            this.textBoxTotal.Location = new System.Drawing.Point(781, 246);
             this.textBoxTotal.Name = "textBoxTotal";
             this.textBoxTotal.Size = new System.Drawing.Size(93, 21);
             this.textBoxTotal.TabIndex = 74;
+            this.textBoxTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(369, 247);
+            this.label3.Location = new System.Drawing.Point(580, 250);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(159, 13);
             this.label3.TabIndex = 45;
@@ -154,7 +170,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(338, 123);
+            this.label2.Location = new System.Drawing.Point(327, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 26);
             this.label2.TabIndex = 44;
@@ -163,7 +179,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(393, 27);
+            this.label1.Location = new System.Drawing.Point(369, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 13);
             this.label1.TabIndex = 43;
@@ -175,12 +191,12 @@
             this.dataGridViewNarudzbeStavke.AllowUserToDeleteRows = false;
             this.dataGridViewNarudzbeStavke.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dataGridViewNarudzbeStavke.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewNarudzbeStavke.Location = new System.Drawing.Point(396, 51);
+            this.dataGridViewNarudzbeStavke.Location = new System.Drawing.Point(372, 51);
             this.dataGridViewNarudzbeStavke.MultiSelect = false;
             this.dataGridViewNarudzbeStavke.Name = "dataGridViewNarudzbeStavke";
             this.dataGridViewNarudzbeStavke.ReadOnly = true;
             this.dataGridViewNarudzbeStavke.RowHeadersVisible = false;
-            this.dataGridViewNarudzbeStavke.Size = new System.Drawing.Size(267, 184);
+            this.dataGridViewNarudzbeStavke.Size = new System.Drawing.Size(502, 184);
             this.dataGridViewNarudzbeStavke.TabIndex = 42;
             // 
             // dataGridViewNarudzbe
@@ -196,6 +212,7 @@
             this.dataGridViewNarudzbe.RowHeadersVisible = false;
             this.dataGridViewNarudzbe.Size = new System.Drawing.Size(301, 211);
             this.dataGridViewNarudzbe.TabIndex = 41;
+            this.dataGridViewNarudzbe.SelectionChanged += new System.EventHandler(this.dataGridViewNarudzbe_SelectionChanged);
             // 
             // buttonKupciTrazi
             // 
@@ -208,6 +225,7 @@
             this.buttonKupciTrazi.TabIndex = 40;
             this.buttonKupciTrazi.Text = "Traži ...";
             this.buttonKupciTrazi.UseVisualStyleBackColor = false;
+            this.buttonKupciTrazi.Click += new System.EventHandler(this.buttonKupciTrazi_Click);
             // 
             // labelNarudzbaIDTrazi
             // 
@@ -218,19 +236,11 @@
             this.labelNarudzbaIDTrazi.TabIndex = 38;
             this.labelNarudzbaIDTrazi.Text = "Sistemski ID narudžbe";
             // 
-            // textBoxNarudzbaIDTrazi
-            // 
-            this.textBoxNarudzbaIDTrazi.BackColor = System.Drawing.Color.LightCyan;
-            this.textBoxNarudzbaIDTrazi.Location = new System.Drawing.Point(148, 243);
-            this.textBoxNarudzbaIDTrazi.Name = "textBoxNarudzbaIDTrazi";
-            this.textBoxNarudzbaIDTrazi.Size = new System.Drawing.Size(80, 21);
-            this.textBoxNarudzbaIDTrazi.TabIndex = 36;
-            // 
             // FormKupPregledNarudzbi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 332);
+            this.ClientSize = new System.Drawing.Size(934, 332);
             this.Controls.Add(this.groupBoxPretraga);
             this.Controls.Add(this.labelKorisnikInfo);
             this.Controls.Add(this.menuStrip);
@@ -243,6 +253,7 @@
             this.menuStrip.PerformLayout();
             this.groupBoxPretraga.ResumeLayout(false);
             this.groupBoxPretraga.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNarudzbeStavke)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNarudzbe)).EndInit();
             this.ResumeLayout(false);
@@ -267,7 +278,7 @@
         private System.Windows.Forms.DataGridView dataGridViewNarudzbe;
         private System.Windows.Forms.Button buttonKupciTrazi;
         private System.Windows.Forms.Label labelNarudzbaIDTrazi;
-        private System.Windows.Forms.TextBox textBoxNarudzbaIDTrazi;
         private System.Windows.Forms.TextBox textBoxTotal;
+        private System.Windows.Forms.NumericUpDown numericUpDownID;
     }
 }
