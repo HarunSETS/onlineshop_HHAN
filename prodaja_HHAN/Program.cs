@@ -230,26 +230,12 @@ namespace prodaja_HHAN
             return rezultat;
         }
 
-        public static void updatePostaviKolicinuArtiklaUNarudzbi(int narudzbaID, int artiklID, int kolicina)
-        {
-            // u narudžbi <narudzbaID> na stavci koja se odnosi na artikl <artiklID> postavlja količinu na <kolicina>
-
-            string upit = " update stavke_narudzbinica set kolicina = " + kolicina +
-                          " where narudzbenica_id = " + narudzbaID + " and artikal_id = " + artiklID;
-
-            MySqlConnection con = new MySqlConnection(konekcioniString);
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand(upit, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-        }
-
         public static void insertArtiklaUNarudzbu(int narudzbaID, int artiklID, int kolicina)
         {
             // u narudžbu <narudzbaID> insertuje stavku za artikl (artiklID) sa količinom <kolicina>
             // (polje stavka_id se ne šalje jer njega baza kreira sama kao autoincrement)
-            
-            string upit = " insert into stavke_narudzbinica(narudzbenica_id, artikal_id, kolicina)" +
+
+            string upit = " insert into stavke_narudzbenica(narudzbenica_id, artikal_id, kolicina)" +
                           " values (" + narudzbaID + ", " + artiklID + ", " + kolicina + ")";
 
             MySqlConnection con = new MySqlConnection(konekcioniString);
@@ -257,21 +243,7 @@ namespace prodaja_HHAN
             MySqlCommand cmd = new MySqlCommand(upit, con);
             cmd.ExecuteNonQuery();
             con.Close();
-        }
-
-        public static void deleteArtiklaUNarudzbi(int narudzbaID, int artiklID)
-        {
-            // briše stavki narudžbe <narudzbaID> briše onu stavku koja se odnosi na artikl <artiklID>
-
-            string upit = " delete from stavke_narudzbinica" + 
-                          " where narudzbenica_id = " + narudzbaID + " and artikal_id = " + artiklID;
-
-            MySqlConnection con = new MySqlConnection(konekcioniString);
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand(upit, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-        }
+        }        
 
         // ======== zaglavlje narudzbe
 
@@ -280,7 +252,7 @@ namespace prodaja_HHAN
             // kreira novo zaglavlje narudžbe za kupca <kupacID> na trenutni datum koji odredi baza podataka (baza koristi funkciju now() )
             // (polje narudzbenica_id se ne šalje jer njega baza kreira sama kao autoincrement)
 
-            string upit = " insert into narudzbinice(kupac_id, datum_narudzbe)" +
+            string upit = " insert into narudzbenice(kupac_id, datum_narudzbe)" +
                           " values (" + kupacID + ", now() )";
 
             MySqlConnection con = new MySqlConnection(konekcioniString);
@@ -288,6 +260,35 @@ namespace prodaja_HHAN
             MySqlCommand cmd = new MySqlCommand(upit, con);
             cmd.ExecuteNonQuery();
             con.Close();
+        }
+
+        public static int vratiPosljednjiIDNarudzbeKupca(int kupacID)
+        {
+            // Vraća ID posljednje narudžbe koju je napravio kupac <kupacID>.
+            // Ako nema niti jedne narudžbe tog kupca vraća -1.
+            // Koristi se kad se insertuje narudžba da bi se znao koji je njen ID,
+            // pa da se na osnovu njega popune stavke te narudžbe.
+
+            int rezultat;
+
+            string upit = " select max(narudzbenica_id) as posljednji_id from narudzbenice" +
+                          " where kupac_id = " + kupacID;
+
+            MySqlConnection con = new MySqlConnection(konekcioniString);
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand(upit, con);
+
+            MySqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows)
+                rezultat = System.Convert.ToInt32(reader["posljednji_id"].ToString());
+            else
+                rezultat = -1;
+
+            reader.Close();
+            con.Close();
+
+            return rezultat;
         }
 
         public static void obrisiNarudzbuINjeneStavke(int narudzbaID)

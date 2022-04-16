@@ -66,7 +66,7 @@ namespace prodaja_HHAN
 
         private void buttonKupciTrazi_Click(object sender, EventArgs e)
         {
-            // Zbog prikaza poruke ako se narudžba ne nađe zapamti u pomoćnu varijablu ID narudžbe koji se traži 
+            // Zbog prikaza poruke ako se narudžba ne nađe, zapamti u pomoćnu varijablu ID narudžbe koji se traži 
             // jer će ga u slučaju da se narudžba ne pronađe počistiti funkcija PrikazNarudzbiPrijavljenogKorisnika.  
             string pomocniIDNarudzbe = numericUpDownID.Text;
             
@@ -82,8 +82,10 @@ namespace prodaja_HHAN
             }
         }
 
-        private void PrikazNarudzbiPrijavljenogKorisnika(bool FiltrirajPoPoljuTrazi)
+        public void PrikazNarudzbiPrijavljenogKorisnika(bool FiltrirajPoPoljuTrazi)
         {
+            // Ako se proslijedi TRUE metod će tražiti samo onu narudžbu prijavljenog kupca čiji je ID zadan u polju "Sistemski ID narudžbe"
+            // Ako se proslijedi FALSE metod će tražiti sve narudžbe prijavljenog kupca
             try
             {
 
