@@ -63,6 +63,76 @@ namespace prodaja_HHAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap azuriraj_korisnika_dorada {
+            get {
+                object obj = ResourceManager.GetObject("azuriraj_korisnika_dorada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap azuriranje_podataka_dorada {
+            get {
+                object obj = ResourceManager.GetObject("azuriranje_podataka_dorada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap brisanje_artikla_korpu_dorada {
+            get {
+                object obj = ResourceManager.GetObject("brisanje_artikla_korpu_dorada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap brisanje_narudzbe_manja {
+            get {
+                object obj = ResourceManager.GetObject("brisanje_narudzbe_manja", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dodaj_korisnika {
+            get {
+                object obj = ResourceManager.GetObject("dodaj_korisnika", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dodavanje_artikala_dorada {
+            get {
+                object obj = ResourceManager.GetObject("dodavanje_artikala_dorada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dodavanje_artikla_korpu_dorada {
+            get {
+                object obj = ResourceManager.GetObject("dodavanje_artikla_korpu_dorada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap glavna_pozadina {
             get {
                 object obj = ResourceManager.GetObject("glavna_pozadina", resourceCulture);
@@ -73,19 +143,9 @@ namespace prodaja_HHAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap kupac_azuriranje {
+        internal static System.Drawing.Bitmap hhanlogo {
             get {
-                object obj = ResourceManager.GetObject("kupac_azuriranje", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap kupac_kreiranje {
-            get {
-                object obj = ResourceManager.GetObject("kupac_kreiranje", resourceCulture);
+                object obj = ResourceManager.GetObject("hhanlogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +156,26 @@ namespace prodaja_HHAN.Properties {
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap obrisi_korisnika_nova {
+            get {
+                object obj = ResourceManager.GetObject("obrisi_korisnika_nova", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pregled_narudzbi_dorada {
+            get {
+                object obj = ResourceManager.GetObject("pregled_narudzbi_dorada", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

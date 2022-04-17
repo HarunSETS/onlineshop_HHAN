@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmKupaca));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.meniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemAdmKupaca = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,10 +46,8 @@
             this.textBoxImeTrazi = new System.Windows.Forms.TextBox();
             this.tabControlKupci = new System.Windows.Forms.TabControl();
             this.tabPageAzuriranje = new System.Windows.Forms.TabPage();
-            this.pictureBoxKupacAzuriranje = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBoxTipKorisnikaAzuriranje = new System.Windows.Forms.ComboBox();
-            this.buttonKupciAzuriranje = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxIDAzuriranje = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -70,8 +67,6 @@
             this.labelIme = new System.Windows.Forms.Label();
             this.textBoxImeAzuriranje = new System.Windows.Forms.TextBox();
             this.tabPageKreiranje = new System.Windows.Forms.TabPage();
-            this.pictureBoxKupacKreiranje = new System.Windows.Forms.PictureBox();
-            this.buttonKupcKreiranje = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.comboBoxTipKorisnikaKreiranje = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -93,18 +88,18 @@
             this.label19 = new System.Windows.Forms.Label();
             this.textBoxImeKreiranje = new System.Windows.Forms.TextBox();
             this.tabPageBrisanje = new System.Windows.Forms.TabPage();
-            this.buttonBrisanje = new System.Windows.Forms.Button();
             this.textBoxIDBrisanje = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.buttonKupciAzuriranje = new System.Windows.Forms.Button();
+            this.buttonKupcKreiranje = new System.Windows.Forms.Button();
+            this.buttonBrisanje = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.groupBoxPretraga.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKorisnici)).BeginInit();
             this.tabControlKupci.SuspendLayout();
             this.tabPageAzuriranje.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKupacAzuriranje)).BeginInit();
             this.tabPageKreiranje.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKupacKreiranje)).BeginInit();
             this.tabPageBrisanje.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
@@ -272,7 +267,6 @@
             // 
             // tabPageAzuriranje
             // 
-            this.tabPageAzuriranje.Controls.Add(this.pictureBoxKupacAzuriranje);
             this.tabPageAzuriranje.Controls.Add(this.label9);
             this.tabPageAzuriranje.Controls.Add(this.comboBoxTipKorisnikaAzuriranje);
             this.tabPageAzuriranje.Controls.Add(this.buttonKupciAzuriranje);
@@ -302,17 +296,6 @@
             this.tabPageAzuriranje.Text = "Ažuriranje postojećeg korisnika";
             this.tabPageAzuriranje.UseVisualStyleBackColor = true;
             // 
-            // pictureBoxKupacAzuriranje
-            // 
-            this.pictureBoxKupacAzuriranje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxKupacAzuriranje.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxKupacAzuriranje.Image")));
-            this.pictureBoxKupacAzuriranje.Location = new System.Drawing.Point(536, 23);
-            this.pictureBoxKupacAzuriranje.Name = "pictureBoxKupacAzuriranje";
-            this.pictureBoxKupacAzuriranje.Size = new System.Drawing.Size(119, 73);
-            this.pictureBoxKupacAzuriranje.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxKupacAzuriranje.TabIndex = 122;
-            this.pictureBoxKupacAzuriranje.TabStop = false;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -330,19 +313,6 @@
             this.comboBoxTipKorisnikaAzuriranje.Name = "comboBoxTipKorisnikaAzuriranje";
             this.comboBoxTipKorisnikaAzuriranje.Size = new System.Drawing.Size(131, 21);
             this.comboBoxTipKorisnikaAzuriranje.TabIndex = 76;
-            // 
-            // buttonKupciAzuriranje
-            // 
-            this.buttonKupciAzuriranje.BackColor = System.Drawing.Color.Moccasin;
-            this.buttonKupciAzuriranje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonKupciAzuriranje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonKupciAzuriranje.Location = new System.Drawing.Point(536, 103);
-            this.buttonKupciAzuriranje.Name = "buttonKupciAzuriranje";
-            this.buttonKupciAzuriranje.Size = new System.Drawing.Size(119, 52);
-            this.buttonKupciAzuriranje.TabIndex = 75;
-            this.buttonKupciAzuriranje.Text = "Ažuriraj podatke o postojećem korisniku";
-            this.buttonKupciAzuriranje.UseVisualStyleBackColor = false;
-            this.buttonKupciAzuriranje.Click += new System.EventHandler(this.buttonKupciAzuriranje_Click);
             // 
             // label8
             // 
@@ -502,7 +472,6 @@
             // 
             // tabPageKreiranje
             // 
-            this.tabPageKreiranje.Controls.Add(this.pictureBoxKupacKreiranje);
             this.tabPageKreiranje.Controls.Add(this.buttonKupcKreiranje);
             this.tabPageKreiranje.Controls.Add(this.label10);
             this.tabPageKreiranje.Controls.Add(this.comboBoxTipKorisnikaKreiranje);
@@ -531,30 +500,6 @@
             this.tabPageKreiranje.TabIndex = 1;
             this.tabPageKreiranje.Text = "Kreiranje novog korisnika";
             this.tabPageKreiranje.UseVisualStyleBackColor = true;
-            // 
-            // pictureBoxKupacKreiranje
-            // 
-            this.pictureBoxKupacKreiranje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxKupacKreiranje.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxKupacKreiranje.Image")));
-            this.pictureBoxKupacKreiranje.Location = new System.Drawing.Point(536, 22);
-            this.pictureBoxKupacKreiranje.Name = "pictureBoxKupacKreiranje";
-            this.pictureBoxKupacKreiranje.Size = new System.Drawing.Size(122, 73);
-            this.pictureBoxKupacKreiranje.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxKupacKreiranje.TabIndex = 120;
-            this.pictureBoxKupacKreiranje.TabStop = false;
-            // 
-            // buttonKupcKreiranje
-            // 
-            this.buttonKupcKreiranje.BackColor = System.Drawing.Color.Moccasin;
-            this.buttonKupcKreiranje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonKupcKreiranje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonKupcKreiranje.Location = new System.Drawing.Point(536, 102);
-            this.buttonKupcKreiranje.Name = "buttonKupcKreiranje";
-            this.buttonKupcKreiranje.Size = new System.Drawing.Size(119, 52);
-            this.buttonKupcKreiranje.TabIndex = 119;
-            this.buttonKupcKreiranje.Text = "Kreiraj novog korisnika";
-            this.buttonKupcKreiranje.UseVisualStyleBackColor = false;
-            this.buttonKupcKreiranje.Click += new System.EventHandler(this.buttonKupcKreiranje_Click);
             // 
             // label10
             // 
@@ -742,19 +687,6 @@
             this.tabPageBrisanje.Text = "Brisanje korisnika koji nema vezane narudžbe";
             this.tabPageBrisanje.UseVisualStyleBackColor = true;
             // 
-            // buttonBrisanje
-            // 
-            this.buttonBrisanje.BackColor = System.Drawing.Color.Moccasin;
-            this.buttonBrisanje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBrisanje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBrisanje.Location = new System.Drawing.Point(536, 103);
-            this.buttonBrisanje.Name = "buttonBrisanje";
-            this.buttonBrisanje.Size = new System.Drawing.Size(119, 52);
-            this.buttonBrisanje.TabIndex = 78;
-            this.buttonBrisanje.Text = "Obriši podatke o korisniku";
-            this.buttonBrisanje.UseVisualStyleBackColor = false;
-            this.buttonBrisanje.Click += new System.EventHandler(this.buttonBrisanje_Click);
-            // 
             // textBoxIDBrisanje
             // 
             this.textBoxIDBrisanje.BackColor = System.Drawing.SystemColors.InactiveBorder;
@@ -781,6 +713,54 @@
             this.errorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.AlwaysBlink;
             this.errorProvider.ContainerControl = this;
             // 
+            // buttonKupciAzuriranje
+            // 
+            this.buttonKupciAzuriranje.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonKupciAzuriranje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonKupciAzuriranje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonKupciAzuriranje.Image = global::prodaja_HHAN.Properties.Resources.azuriraj_korisnika_dorada;
+            this.buttonKupciAzuriranje.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonKupciAzuriranje.Location = new System.Drawing.Point(523, 22);
+            this.buttonKupciAzuriranje.Name = "buttonKupciAzuriranje";
+            this.buttonKupciAzuriranje.Size = new System.Drawing.Size(132, 125);
+            this.buttonKupciAzuriranje.TabIndex = 75;
+            this.buttonKupciAzuriranje.Text = "Ažuriraj podatke o postojećem korisniku";
+            this.buttonKupciAzuriranje.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonKupciAzuriranje.UseVisualStyleBackColor = false;
+            this.buttonKupciAzuriranje.Click += new System.EventHandler(this.buttonKupciAzuriranje_Click);
+            // 
+            // buttonKupcKreiranje
+            // 
+            this.buttonKupcKreiranje.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonKupcKreiranje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonKupcKreiranje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonKupcKreiranje.Image = global::prodaja_HHAN.Properties.Resources.dodaj_korisnika;
+            this.buttonKupcKreiranje.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonKupcKreiranje.Location = new System.Drawing.Point(523, 22);
+            this.buttonKupcKreiranje.Name = "buttonKupcKreiranje";
+            this.buttonKupcKreiranje.Size = new System.Drawing.Size(132, 125);
+            this.buttonKupcKreiranje.TabIndex = 119;
+            this.buttonKupcKreiranje.Text = "Kreiraj novog korisnika";
+            this.buttonKupcKreiranje.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonKupcKreiranje.UseVisualStyleBackColor = false;
+            this.buttonKupcKreiranje.Click += new System.EventHandler(this.buttonKupcKreiranje_Click);
+            // 
+            // buttonBrisanje
+            // 
+            this.buttonBrisanje.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonBrisanje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBrisanje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBrisanje.Image = global::prodaja_HHAN.Properties.Resources.obrisi_korisnika_nova;
+            this.buttonBrisanje.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonBrisanje.Location = new System.Drawing.Point(523, 22);
+            this.buttonBrisanje.Name = "buttonBrisanje";
+            this.buttonBrisanje.Size = new System.Drawing.Size(132, 125);
+            this.buttonBrisanje.TabIndex = 78;
+            this.buttonBrisanje.Text = "Obriši podatke o korisniku";
+            this.buttonBrisanje.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonBrisanje.UseVisualStyleBackColor = false;
+            this.buttonBrisanje.Click += new System.EventHandler(this.buttonBrisanje_Click);
+            // 
             // FormAdmKupaca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -803,10 +783,8 @@
             this.tabControlKupci.ResumeLayout(false);
             this.tabPageAzuriranje.ResumeLayout(false);
             this.tabPageAzuriranje.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKupacAzuriranje)).EndInit();
             this.tabPageKreiranje.ResumeLayout(false);
             this.tabPageKreiranje.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKupacKreiranje)).EndInit();
             this.tabPageBrisanje.ResumeLayout(false);
             this.tabPageBrisanje.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
@@ -877,8 +855,6 @@
         private System.Windows.Forms.TextBox textBoxPrezimeKreiranje;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBoxImeKreiranje;
-        private System.Windows.Forms.PictureBox pictureBoxKupacKreiranje;
-        private System.Windows.Forms.PictureBox pictureBoxKupacAzuriranje;
         private System.Windows.Forms.ErrorProvider errorProvider;
         private System.Windows.Forms.TabPage tabPageBrisanje;
         private System.Windows.Forms.Button buttonBrisanje;

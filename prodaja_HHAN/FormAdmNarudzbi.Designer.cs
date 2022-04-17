@@ -40,12 +40,12 @@
             this.groupBoxPretraga = new System.Windows.Forms.GroupBox();
             this.dataGridViewNarudzbe = new System.Windows.Forms.DataGridView();
             this.groupBoxBrisanje = new System.Windows.Forms.GroupBox();
-            this.buttonNarudzbeBrisi = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxNazivAzuriranje = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxSort = new System.Windows.Forms.ComboBox();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.buttonNarudzbeBrisi = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.groupBoxPretraga.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNarudzbe)).BeginInit();
@@ -157,23 +157,10 @@
             this.groupBoxBrisanje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxBrisanje.Location = new System.Drawing.Point(12, 292);
             this.groupBoxBrisanje.Name = "groupBoxBrisanje";
-            this.groupBoxBrisanje.Size = new System.Drawing.Size(699, 69);
+            this.groupBoxBrisanje.Size = new System.Drawing.Size(699, 121);
             this.groupBoxBrisanje.TabIndex = 60;
             this.groupBoxBrisanje.TabStop = false;
             this.groupBoxBrisanje.Text = "Brisanje odabrane narudžbe sa njenim stavkama";
-            // 
-            // buttonNarudzbeBrisi
-            // 
-            this.buttonNarudzbeBrisi.BackColor = System.Drawing.Color.Moccasin;
-            this.buttonNarudzbeBrisi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNarudzbeBrisi.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNarudzbeBrisi.Location = new System.Drawing.Point(462, 26);
-            this.buttonNarudzbeBrisi.Name = "buttonNarudzbeBrisi";
-            this.buttonNarudzbeBrisi.Size = new System.Drawing.Size(222, 28);
-            this.buttonNarudzbeBrisi.TabIndex = 78;
-            this.buttonNarudzbeBrisi.Text = "Obriši narudžbu i njene stavke";
-            this.buttonNarudzbeBrisi.UseVisualStyleBackColor = false;
-            this.buttonNarudzbeBrisi.Click += new System.EventHandler(this.buttonNarudzbeBrisi_Click);
             // 
             // label8
             // 
@@ -225,11 +212,27 @@
             this.errorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.AlwaysBlink;
             this.errorProvider.ContainerControl = this;
             // 
+            // buttonNarudzbeBrisi
+            // 
+            this.buttonNarudzbeBrisi.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonNarudzbeBrisi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNarudzbeBrisi.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNarudzbeBrisi.Image = global::prodaja_HHAN.Properties.Resources.brisanje_narudzbe_manja;
+            this.buttonNarudzbeBrisi.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonNarudzbeBrisi.Location = new System.Drawing.Point(507, 14);
+            this.buttonNarudzbeBrisi.Name = "buttonNarudzbeBrisi";
+            this.buttonNarudzbeBrisi.Size = new System.Drawing.Size(176, 100);
+            this.buttonNarudzbeBrisi.TabIndex = 78;
+            this.buttonNarudzbeBrisi.Text = "Obriši narudžbu i njene stavke";
+            this.buttonNarudzbeBrisi.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonNarudzbeBrisi.UseVisualStyleBackColor = false;
+            this.buttonNarudzbeBrisi.Click += new System.EventHandler(this.buttonNarudzbeBrisi_Click);
+            // 
             // FormAdmNarudzbi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 396);
+            this.ClientSize = new System.Drawing.Size(723, 425);
             this.Controls.Add(this.comboBoxSort);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBoxBrisanje);

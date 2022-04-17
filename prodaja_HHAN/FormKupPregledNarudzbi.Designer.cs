@@ -60,7 +60,7 @@
             this.MeniToolStripMenuItemGlavniKupMeni});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(934, 24);
+            this.menuStrip.Size = new System.Drawing.Size(919, 24);
             this.menuStrip.TabIndex = 34;
             this.menuStrip.Text = "Glavni meni";
             // 
@@ -128,7 +128,7 @@
             this.groupBoxPretraga.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxPretraga.Location = new System.Drawing.Point(12, 36);
             this.groupBoxPretraga.Name = "groupBoxPretraga";
-            this.groupBoxPretraga.Size = new System.Drawing.Size(893, 281);
+            this.groupBoxPretraga.Size = new System.Drawing.Size(893, 322);
             this.groupBoxPretraga.TabIndex = 39;
             this.groupBoxPretraga.TabStop = false;
             this.groupBoxPretraga.Text = "Pregled vaših ranijih narudžbi";
@@ -136,7 +136,7 @@
             // numericUpDownID
             // 
             this.numericUpDownID.BackColor = System.Drawing.SystemColors.Info;
-            this.numericUpDownID.Location = new System.Drawing.Point(140, 244);
+            this.numericUpDownID.Location = new System.Drawing.Point(16, 263);
             this.numericUpDownID.Maximum = new decimal(new int[] {
             1410065407,
             2,
@@ -144,7 +144,7 @@
             0});
             this.numericUpDownID.Name = "numericUpDownID";
             this.numericUpDownID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.numericUpDownID.Size = new System.Drawing.Size(90, 21);
+            this.numericUpDownID.Size = new System.Drawing.Size(107, 21);
             this.numericUpDownID.TabIndex = 154;
             // 
             // textBoxTotal
@@ -162,9 +162,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(580, 250);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 13);
+            this.label3.Size = new System.Drawing.Size(191, 13);
             this.label3.TabIndex = 45;
-            this.label3.Text = "Total za odabranu narudžbu (KM)";
+            this.label3.Text = "Ukupna cijena odabrane narudžbe (KM)";
             // 
             // label2
             // 
@@ -216,14 +216,17 @@
             // 
             // buttonKupciTrazi
             // 
-            this.buttonKupciTrazi.BackColor = System.Drawing.Color.LightCyan;
+            this.buttonKupciTrazi.BackColor = System.Drawing.Color.Moccasin;
             this.buttonKupciTrazi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonKupciTrazi.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonKupciTrazi.Location = new System.Drawing.Point(236, 243);
+            this.buttonKupciTrazi.Image = global::prodaja_HHAN.Properties.Resources.pregled_narudzbi_dorada;
+            this.buttonKupciTrazi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonKupciTrazi.Location = new System.Drawing.Point(202, 243);
             this.buttonKupciTrazi.Name = "buttonKupciTrazi";
-            this.buttonKupciTrazi.Size = new System.Drawing.Size(81, 24);
+            this.buttonKupciTrazi.Size = new System.Drawing.Size(115, 67);
             this.buttonKupciTrazi.TabIndex = 40;
             this.buttonKupciTrazi.Text = "Traži ...";
+            this.buttonKupciTrazi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonKupciTrazi.UseVisualStyleBackColor = false;
             this.buttonKupciTrazi.Click += new System.EventHandler(this.buttonKupciTrazi_Click);
             // 
@@ -240,7 +243,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 332);
+            this.ClientSize = new System.Drawing.Size(919, 369);
             this.Controls.Add(this.groupBoxPretraga);
             this.Controls.Add(this.labelKorisnikInfo);
             this.Controls.Add(this.menuStrip);

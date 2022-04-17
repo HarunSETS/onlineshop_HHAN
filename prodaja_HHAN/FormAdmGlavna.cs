@@ -11,6 +11,9 @@ namespace prodaja_HHAN
 {
     public partial class FormAdmGlavna : Form
     {
+        // varijabla koja odredjuje da li se vidi logo sličica
+        bool logoVidljiv = false;
+        
         public FormAdmGlavna()
         {
             InitializeComponent();
@@ -66,6 +69,21 @@ namespace prodaja_HHAN
         private void FormAdmGlavna_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+        
+        private void timerZaSliku_Tick(object sender, EventArgs e)
+        {
+            logoVidljiv = !logoVidljiv;
+
+            pictureBoxLogo.Visible = logoVidljiv;
+        }
+
+        private void FormLogin_VisibleChanged(object sender, EventArgs e)
+        {
+            if (this.Visible == true)
+                timerZaSliku.Start();
+            else
+                timerZaSliku.Stop();
         }
 
     }

@@ -118,16 +118,40 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="azuriraj_korisnika_dorada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\azuriraj_korisnika_dorada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="azuriranje_podataka_dorada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\azuriranje_podataka_dorada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brisanje_artikla_korpu_dorada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brisanje_artikla_korpu_dorada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brisanje_narudzbe_manja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brisanje_narudzbe_manja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dodaj_korisnika" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dodaj_korisnika.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dodavanje_artikala_dorada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dodavanje_artikala_dorada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dodavanje_artikla_korpu_dorada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dodavanje_artikla_korpu_dorada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="glavna_pozadina" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\glavna_pozadina.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kupac_azuriranje" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kupac_azuriranje.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kupac_kreiranje" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kupac_kreiranje.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hhanlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hhanlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="obrisi_korisnika_nova" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\obrisi_korisnika_nova.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pregled_narudzbi_dorada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pregled_narudzbi_dorada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmGlavna));
             this.buttonAdmNarudzbe = new System.Windows.Forms.Button();
             this.buttonAdmKupci = new System.Windows.Forms.Button();
             this.buttonAdmArtikli = new System.Windows.Forms.Button();
@@ -37,9 +39,12 @@
             this.ToolStripMenuItemAdmArtikala = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemPregledBrisanjeNarudzbi = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemOdjava = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBoxLogin = new System.Windows.Forms.PictureBox();
             this.labelKorisnikInfo = new System.Windows.Forms.Label();
+            this.timerZaSliku = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogin = new System.Windows.Forms.PictureBox();
             this.menuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogin)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,17 +137,6 @@
             this.ToolStripMenuItemOdjava.Text = "Odjava iz aplikacije";
             this.ToolStripMenuItemOdjava.Click += new System.EventHandler(this.ToolStripMenuItemOdjava_Click);
             // 
-            // pictureBoxLogin
-            // 
-            this.pictureBoxLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxLogin.Image = global::prodaja_HHAN.Properties.Resources.glavna_pozadina;
-            this.pictureBoxLogin.Location = new System.Drawing.Point(1, 27);
-            this.pictureBoxLogin.Name = "pictureBoxLogin";
-            this.pictureBoxLogin.Size = new System.Drawing.Size(291, 272);
-            this.pictureBoxLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLogin.TabIndex = 13;
-            this.pictureBoxLogin.TabStop = false;
-            // 
             // labelKorisnikInfo
             // 
             this.labelKorisnikInfo.AutoSize = true;
@@ -155,11 +149,39 @@
             this.labelKorisnikInfo.TabIndex = 29;
             this.labelKorisnikInfo.Text = "prijavljeni korisnik info";
             // 
+            // timerZaSliku
+            // 
+            this.timerZaSliku.Interval = 1000;
+            this.timerZaSliku.Tick += new System.EventHandler(this.timerZaSliku_Tick);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.BackgroundImage = global::prodaja_HHAN.Properties.Resources.hhanlogo;
+            this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(1, 27);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(294, 274);
+            this.pictureBoxLogo.TabIndex = 30;
+            this.pictureBoxLogo.TabStop = false;
+            this.pictureBoxLogo.Visible = false;
+            // 
+            // pictureBoxLogin
+            // 
+            this.pictureBoxLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxLogin.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogin.Image")));
+            this.pictureBoxLogin.Location = new System.Drawing.Point(1, 27);
+            this.pictureBoxLogin.Name = "pictureBoxLogin";
+            this.pictureBoxLogin.Size = new System.Drawing.Size(291, 272);
+            this.pictureBoxLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogin.TabIndex = 13;
+            this.pictureBoxLogin.TabStop = false;
+            // 
             // FormAdmGlavna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(614, 301);
+            this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.labelKorisnikInfo);
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.buttonAdmArtikli);
@@ -171,8 +193,10 @@
             this.Text = "ADMINISTRATOR - Glavni ekran";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAdmGlavna_FormClosed);
             this.Load += new System.EventHandler(this.FormAdmGlavna_Load);
+            this.VisibleChanged += new System.EventHandler(this.FormLogin_VisibleChanged);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -192,5 +216,7 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemPregledBrisanjeNarudzbi;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemOdjava;
         private System.Windows.Forms.Label labelKorisnikInfo;
+        private System.Windows.Forms.Timer timerZaSliku;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
     }
 }

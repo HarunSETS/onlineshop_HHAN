@@ -34,8 +34,11 @@
             this.textBoxKorisnickoIme = new System.Windows.Forms.TextBox();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.labelKorisnickoIme = new System.Windows.Forms.Label();
+            this.timerZaSliku = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.pictureBoxLogin = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogin)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,6 +94,22 @@
             this.labelKorisnickoIme.TabIndex = 7;
             this.labelKorisnickoIme.Text = "Korisničko ime:";
             // 
+            // timerZaSliku
+            // 
+            this.timerZaSliku.Interval = 1000;
+            this.timerZaSliku.Tick += new System.EventHandler(this.timerZaSliku_Tick);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.BackgroundImage = global::prodaja_HHAN.Properties.Resources.hhanlogo;
+            this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(1, 1);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(294, 294);
+            this.pictureBoxLogo.TabIndex = 13;
+            this.pictureBoxLogo.TabStop = false;
+            this.pictureBoxLogo.Visible = false;
+            // 
             // pictureBoxLogin
             // 
             this.pictureBoxLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -107,6 +126,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(559, 298);
+            this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.buttonPrijava);
             this.Controls.Add(this.textBoxSifra);
             this.Controls.Add(this.textBoxKorisnickoIme);
@@ -118,7 +138,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prijava korisnika";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+            this.VisibleChanged += new System.EventHandler(this.FormLogin_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -133,6 +155,8 @@
         private System.Windows.Forms.PictureBox pictureBoxLogin;
         private System.Windows.Forms.ErrorProvider errorProvider;
         private System.Windows.Forms.Label labelKorisnickoIme;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Timer timerZaSliku;
     }
 }
 
