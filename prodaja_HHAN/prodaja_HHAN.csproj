@@ -186,13 +186,88 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\glavna_pozadina.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\kupac_kreiranje.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\kupac_azuriranje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azuriraj_korisnika.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azuriranje_podataka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brisanje_artikla_korpu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brisanje_narudzbe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dodaj_korisnika.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dodavanje_artikala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dodavanje_artikla_korpu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pregled_narudzbi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hhanlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azuriranje_podataka2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azuriranje_podataka_manji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dodavanje_artikala_manji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dodavanje_artikala_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azuriranje_podataka_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azuriranje_podataka_dorada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dodavanje_artikala_dorada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azuriraj_korisnika_dorada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glavna_pozadina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obrisi_korisnika.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obrisi_korisnika_dorada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obrisi_korisnika_nova.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brisanje_narudzbe_dorada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brisanje_narudzbe_manja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dodavanje_artikla_korpu_dorada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brisanje_artikla_korpu_dorada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pregled_narudzbi_dorada.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

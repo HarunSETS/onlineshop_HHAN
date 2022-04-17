@@ -43,7 +43,6 @@
             this.textBoxBarKodAzuriranje = new System.Windows.Forms.TextBox();
             this.numericUpDownCijenaAzuriranje = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownKolicinaAzuriranje = new System.Windows.Forms.NumericUpDown();
-            this.buttonArtikliAzuriranje = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxIDAzuriranje = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -59,7 +58,6 @@
             this.textBoxBarKodKreiranje = new System.Windows.Forms.TextBox();
             this.numericUpDownCijenaKreiranje = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownKolicinaKreiranje = new System.Windows.Forms.NumericUpDown();
-            this.buttonArtikliKreiranje = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxIDKreiranje = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -78,6 +76,8 @@
             this.textBoxNazivTrazi = new System.Windows.Forms.TextBox();
             this.textBoxBarKodTrazi = new System.Windows.Forms.TextBox();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.buttonArtikliAzuriranje = new System.Windows.Forms.Button();
+            this.buttonArtikliKreiranje = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.tabControlArtikli.SuspendLayout();
             this.tabPageAzuriranje.SuspendLayout();
@@ -246,19 +246,6 @@
             this.numericUpDownKolicinaAzuriranje.Size = new System.Drawing.Size(75, 20);
             this.numericUpDownKolicinaAzuriranje.TabIndex = 124;
             // 
-            // buttonArtikliAzuriranje
-            // 
-            this.buttonArtikliAzuriranje.BackColor = System.Drawing.Color.Moccasin;
-            this.buttonArtikliAzuriranje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonArtikliAzuriranje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonArtikliAzuriranje.Location = new System.Drawing.Point(501, 53);
-            this.buttonArtikliAzuriranje.Name = "buttonArtikliAzuriranje";
-            this.buttonArtikliAzuriranje.Size = new System.Drawing.Size(110, 45);
-            this.buttonArtikliAzuriranje.TabIndex = 75;
-            this.buttonArtikliAzuriranje.Text = "Ažuriraj podatke o postojećem artiklu";
-            this.buttonArtikliAzuriranje.UseVisualStyleBackColor = false;
-            this.buttonArtikliAzuriranje.Click += new System.EventHandler(this.buttonArtikliAzuriranje_Click);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -353,7 +340,6 @@
             this.tabPageKreiranje.Controls.Add(this.textBoxBarKodKreiranje);
             this.tabPageKreiranje.Controls.Add(this.numericUpDownCijenaKreiranje);
             this.tabPageKreiranje.Controls.Add(this.numericUpDownKolicinaKreiranje);
-            this.tabPageKreiranje.Controls.Add(this.buttonArtikliKreiranje);
             this.tabPageKreiranje.Controls.Add(this.label4);
             this.tabPageKreiranje.Controls.Add(this.textBoxIDKreiranje);
             this.tabPageKreiranje.Controls.Add(this.label5);
@@ -364,6 +350,7 @@
             this.tabPageKreiranje.Controls.Add(this.textBoxVrstaKreiranje);
             this.tabPageKreiranje.Controls.Add(this.label11);
             this.tabPageKreiranje.Controls.Add(this.textBoxNazivKreiranje);
+            this.tabPageKreiranje.Controls.Add(this.buttonArtikliKreiranje);
             this.tabPageKreiranje.Location = new System.Drawing.Point(4, 22);
             this.tabPageKreiranje.Name = "tabPageKreiranje";
             this.tabPageKreiranje.Padding = new System.Windows.Forms.Padding(3);
@@ -416,19 +403,6 @@
             this.numericUpDownKolicinaKreiranje.Name = "numericUpDownKolicinaKreiranje";
             this.numericUpDownKolicinaKreiranje.Size = new System.Drawing.Size(75, 20);
             this.numericUpDownKolicinaKreiranje.TabIndex = 150;
-            // 
-            // buttonArtikliKreiranje
-            // 
-            this.buttonArtikliKreiranje.BackColor = System.Drawing.Color.Moccasin;
-            this.buttonArtikliKreiranje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonArtikliKreiranje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonArtikliKreiranje.Location = new System.Drawing.Point(501, 53);
-            this.buttonArtikliKreiranje.Name = "buttonArtikliKreiranje";
-            this.buttonArtikliKreiranje.Size = new System.Drawing.Size(110, 45);
-            this.buttonArtikliKreiranje.TabIndex = 149;
-            this.buttonArtikliKreiranje.Text = "Kreiraj novi artikl";
-            this.buttonArtikliKreiranje.UseVisualStyleBackColor = false;
-            this.buttonArtikliKreiranje.Click += new System.EventHandler(this.buttonArtikliKreiranje_Click);
             // 
             // label4
             // 
@@ -601,6 +575,38 @@
             this.errorProvider.BlinkRate = 500;
             this.errorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.AlwaysBlink;
             this.errorProvider.ContainerControl = this;
+            // 
+            // buttonArtikliAzuriranje
+            // 
+            this.buttonArtikliAzuriranje.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonArtikliAzuriranje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonArtikliAzuriranje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonArtikliAzuriranje.Image = global::prodaja_HHAN.Properties.Resources.azuriranje_podataka_dorada;
+            this.buttonArtikliAzuriranje.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonArtikliAzuriranje.Location = new System.Drawing.Point(501, 19);
+            this.buttonArtikliAzuriranje.Name = "buttonArtikliAzuriranje";
+            this.buttonArtikliAzuriranje.Size = new System.Drawing.Size(110, 105);
+            this.buttonArtikliAzuriranje.TabIndex = 75;
+            this.buttonArtikliAzuriranje.Text = "Ažuriraj podatke o postojećem artiklu";
+            this.buttonArtikliAzuriranje.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonArtikliAzuriranje.UseVisualStyleBackColor = false;
+            this.buttonArtikliAzuriranje.Click += new System.EventHandler(this.buttonArtikliAzuriranje_Click);
+            // 
+            // buttonArtikliKreiranje
+            // 
+            this.buttonArtikliKreiranje.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonArtikliKreiranje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonArtikliKreiranje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonArtikliKreiranje.Image = global::prodaja_HHAN.Properties.Resources.dodavanje_artikala_dorada;
+            this.buttonArtikliKreiranje.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonArtikliKreiranje.Location = new System.Drawing.Point(501, 19);
+            this.buttonArtikliKreiranje.Name = "buttonArtikliKreiranje";
+            this.buttonArtikliKreiranje.Size = new System.Drawing.Size(110, 105);
+            this.buttonArtikliKreiranje.TabIndex = 149;
+            this.buttonArtikliKreiranje.Text = "Kreiraj novi artikl          ";
+            this.buttonArtikliKreiranje.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonArtikliKreiranje.UseVisualStyleBackColor = false;
+            this.buttonArtikliKreiranje.Click += new System.EventHandler(this.buttonArtikliKreiranje_Click);
             // 
             // FormAdmArtikala
             // 

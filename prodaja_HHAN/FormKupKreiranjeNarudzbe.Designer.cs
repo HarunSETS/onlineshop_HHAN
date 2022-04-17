@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.meniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemKreiranjeNarudzbe = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,13 +61,13 @@
             this.korpaArtikalKolicina = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.korpaDodaj1Komad = new System.Windows.Forms.DataGridViewButtonColumn();
             this.korpaCijenaArtikalUkupno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonDodajUKorpu = new System.Windows.Forms.Button();
             this.numericUpDownKolicina = new System.Windows.Forms.NumericUpDown();
             this.buttonUkloniIzKorpe = new System.Windows.Forms.Button();
             this.textBoxIDArtikla = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.buttonDodajUKorpu = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.groupBoxArtikli.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtikli)).BeginInit();
@@ -188,10 +188,10 @@
             // 
             // ponudaCijenaArtikalKomad
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle8.Format = "N2";
-            dataGridViewCellStyle8.NullValue = null;
-            this.ponudaCijenaArtikalKomad.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle1.Format = "N2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.ponudaCijenaArtikalKomad.DefaultCellStyle = dataGridViewCellStyle1;
             this.ponudaCijenaArtikalKomad.HeaderText = "Cijena komad [KM]";
             this.ponudaCijenaArtikalKomad.Name = "ponudaCijenaArtikalKomad";
             this.ponudaCijenaArtikalKomad.ReadOnly = true;
@@ -199,8 +199,8 @@
             // 
             // ponudaArtikalKolicina
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.ponudaArtikalKolicina.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.ponudaArtikalKolicina.DefaultCellStyle = dataGridViewCellStyle2;
             this.ponudaArtikalKolicina.HeaderText = "Količina skladište";
             this.ponudaArtikalKolicina.Name = "ponudaArtikalKolicina";
             this.ponudaArtikalKolicina.ReadOnly = true;
@@ -224,7 +224,7 @@
             // 
             this.buttonKreirajNarudzbu.BackColor = System.Drawing.Color.Moccasin;
             this.buttonKreirajNarudzbu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonKreirajNarudzbu.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonKreirajNarudzbu.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonKreirajNarudzbu.Location = new System.Drawing.Point(15, 253);
             this.buttonKreirajNarudzbu.Name = "buttonKreirajNarudzbu";
             this.buttonKreirajNarudzbu.Size = new System.Drawing.Size(228, 31);
@@ -297,10 +297,10 @@
             // 
             // korpaCijenaArtikalKomad
             // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle10.Format = "N2";
-            dataGridViewCellStyle10.NullValue = null;
-            this.korpaCijenaArtikalKomad.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "N2";
+            dataGridViewCellStyle3.NullValue = null;
+            this.korpaCijenaArtikalKomad.DefaultCellStyle = dataGridViewCellStyle3;
             this.korpaCijenaArtikalKomad.HeaderText = "Cijena komad [KM]";
             this.korpaCijenaArtikalKomad.Name = "korpaCijenaArtikalKomad";
             this.korpaCijenaArtikalKomad.ReadOnly = true;
@@ -308,12 +308,12 @@
             // 
             // korpaOduzmi1Komad
             // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Pink;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.NullValue = "-";
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.korpaOduzmi1Komad.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Pink;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.NullValue = "-";
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.korpaOduzmi1Komad.DefaultCellStyle = dataGridViewCellStyle4;
             this.korpaOduzmi1Komad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.korpaOduzmi1Komad.HeaderText = "-";
             this.korpaOduzmi1Komad.Name = "korpaOduzmi1Komad";
@@ -324,8 +324,8 @@
             // 
             // korpaArtikalKolicina
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.korpaArtikalKolicina.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.korpaArtikalKolicina.DefaultCellStyle = dataGridViewCellStyle5;
             this.korpaArtikalKolicina.HeaderText = "Količina";
             this.korpaArtikalKolicina.Name = "korpaArtikalKolicina";
             this.korpaArtikalKolicina.ReadOnly = true;
@@ -333,12 +333,12 @@
             // 
             // korpaDodaj1Komad
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.NullValue = "+";
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Lime;
-            this.korpaDodaj1Komad.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.NullValue = "+";
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Lime;
+            this.korpaDodaj1Komad.DefaultCellStyle = dataGridViewCellStyle6;
             this.korpaDodaj1Komad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.korpaDodaj1Komad.HeaderText = "+";
             this.korpaDodaj1Komad.Name = "korpaDodaj1Komad";
@@ -349,35 +349,22 @@
             // 
             // korpaCijenaArtikalUkupno
             // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.Format = "N2";
-            dataGridViewCellStyle14.NullValue = "-";
-            this.korpaCijenaArtikalUkupno.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.Format = "N2";
+            dataGridViewCellStyle7.NullValue = "-";
+            this.korpaCijenaArtikalUkupno.DefaultCellStyle = dataGridViewCellStyle7;
             this.korpaCijenaArtikalUkupno.HeaderText = "Cijena ukupno [KM]";
             this.korpaCijenaArtikalUkupno.Name = "korpaCijenaArtikalUkupno";
             this.korpaCijenaArtikalUkupno.ReadOnly = true;
             this.korpaCijenaArtikalUkupno.Width = 80;
             // 
-            // buttonDodajUKorpu
-            // 
-            this.buttonDodajUKorpu.BackColor = System.Drawing.Color.Moccasin;
-            this.buttonDodajUKorpu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDodajUKorpu.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDodajUKorpu.Location = new System.Drawing.Point(460, 84);
-            this.buttonDodajUKorpu.Name = "buttonDodajUKorpu";
-            this.buttonDodajUKorpu.Size = new System.Drawing.Size(190, 38);
-            this.buttonDodajUKorpu.TabIndex = 42;
-            this.buttonDodajUKorpu.Text = "=>  Dodaj artikl u korpu   =>";
-            this.buttonDodajUKorpu.UseVisualStyleBackColor = false;
-            this.buttonDodajUKorpu.Click += new System.EventHandler(this.buttonDodajUKorpu_Click);
-            // 
             // numericUpDownKolicina
             // 
             this.numericUpDownKolicina.BackColor = System.Drawing.SystemColors.Info;
             this.numericUpDownKolicina.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownKolicina.Location = new System.Drawing.Point(561, 160);
+            this.numericUpDownKolicina.Location = new System.Drawing.Point(561, 198);
             this.numericUpDownKolicina.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -398,11 +385,15 @@
             this.buttonUkloniIzKorpe.BackColor = System.Drawing.Color.Moccasin;
             this.buttonUkloniIzKorpe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUkloniIzKorpe.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUkloniIzKorpe.Location = new System.Drawing.Point(460, 211);
+            this.buttonUkloniIzKorpe.ForeColor = System.Drawing.Color.Red;
+            this.buttonUkloniIzKorpe.Image = global::prodaja_HHAN.Properties.Resources.brisanje_artikla_korpu_dorada;
+            this.buttonUkloniIzKorpe.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonUkloniIzKorpe.Location = new System.Drawing.Point(459, 245);
             this.buttonUkloniIzKorpe.Name = "buttonUkloniIzKorpe";
-            this.buttonUkloniIzKorpe.Size = new System.Drawing.Size(190, 38);
+            this.buttonUkloniIzKorpe.Size = new System.Drawing.Size(190, 92);
             this.buttonUkloniIzKorpe.TabIndex = 126;
             this.buttonUkloniIzKorpe.Text = "<=  Ukloni artikl iz korpe   <=";
+            this.buttonUkloniIzKorpe.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonUkloniIzKorpe.UseVisualStyleBackColor = false;
             this.buttonUkloniIzKorpe.Click += new System.EventHandler(this.buttonUkloniIzKorpe_Click);
             // 
@@ -411,7 +402,7 @@
             this.textBoxIDArtikla.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBoxIDArtikla.Enabled = false;
             this.textBoxIDArtikla.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxIDArtikla.Location = new System.Drawing.Point(460, 160);
+            this.textBoxIDArtikla.Location = new System.Drawing.Point(460, 198);
             this.textBoxIDArtikla.Name = "textBoxIDArtikla";
             this.textBoxIDArtikla.Size = new System.Drawing.Size(86, 27);
             this.textBoxIDArtikla.TabIndex = 127;
@@ -420,7 +411,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(456, 142);
+            this.label1.Location = new System.Drawing.Point(456, 180);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 13);
             this.label1.TabIndex = 128;
@@ -429,7 +420,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(593, 142);
+            this.label2.Location = new System.Drawing.Point(593, 180);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 13);
             this.label2.TabIndex = 129;
@@ -440,6 +431,24 @@
             this.errorProvider.BlinkRate = 500;
             this.errorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.AlwaysBlink;
             this.errorProvider.ContainerControl = this;
+            // 
+            // buttonDodajUKorpu
+            // 
+            this.buttonDodajUKorpu.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonDodajUKorpu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonDodajUKorpu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDodajUKorpu.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDodajUKorpu.ForeColor = System.Drawing.Color.Green;
+            this.buttonDodajUKorpu.Image = global::prodaja_HHAN.Properties.Resources.dodavanje_artikla_korpu_dorada;
+            this.buttonDodajUKorpu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonDodajUKorpu.Location = new System.Drawing.Point(460, 71);
+            this.buttonDodajUKorpu.Name = "buttonDodajUKorpu";
+            this.buttonDodajUKorpu.Size = new System.Drawing.Size(190, 92);
+            this.buttonDodajUKorpu.TabIndex = 42;
+            this.buttonDodajUKorpu.Text = "=>  Dodaj artikl u korpu   =>";
+            this.buttonDodajUKorpu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonDodajUKorpu.UseVisualStyleBackColor = false;
+            this.buttonDodajUKorpu.Click += new System.EventHandler(this.buttonDodajUKorpu_Click);
             // 
             // FormKupKreiranjeNarudzbe
             // 

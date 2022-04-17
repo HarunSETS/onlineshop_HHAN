@@ -169,7 +169,7 @@ namespace prodaja_HHAN
                 }
                 catch (Exception ex)
                 {
-                    errorProvider.SetError(pictureBoxKupacAzuriranje, ex.Message);
+                    errorProvider.SetError(buttonKupciAzuriranje, ex.Message);
                     MessageBox.Show("Dogodila se greška! Svi potrebni podaci nisu evidentirani ili nisu uneseni u pravilnom formatu ili se preklapaju sa postojećim! " +
                                     "Za više informacija pređite mišem preko uskličnika!");
                 }
@@ -242,7 +242,7 @@ namespace prodaja_HHAN
                 }
                 catch (Exception ex)
                 {
-                    errorProvider.SetError(pictureBoxKupacKreiranje, ex.Message);
+                    errorProvider.SetError(buttonKupciAzuriranje, ex.Message);
                     MessageBox.Show("Dogodila se greška! Svi potrebni podaci nisu evidentirani ili nisu uneseni u pravilnom formatu ili se preklapaju sa postojećim! " +
                                     "Za više informacija pređite mišem preko uskličnika!");
                 }

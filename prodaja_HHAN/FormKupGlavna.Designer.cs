@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormKupGlavna));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.meniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemKreiranjeNarudzbe = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,8 +39,11 @@
             this.buttonKreiranjeNarudzbe = new System.Windows.Forms.Button();
             this.pictureBoxLogin = new System.Windows.Forms.PictureBox();
             this.labelKorisnikInfo = new System.Windows.Forms.Label();
+            this.timerZaSliku = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip
@@ -112,7 +117,7 @@
             // pictureBoxLogin
             // 
             this.pictureBoxLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxLogin.Image = global::prodaja_HHAN.Properties.Resources.glavna_pozadina;
+            this.pictureBoxLogin.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogin.Image")));
             this.pictureBoxLogin.Location = new System.Drawing.Point(1, 25);
             this.pictureBoxLogin.Name = "pictureBoxLogin";
             this.pictureBoxLogin.Size = new System.Drawing.Size(291, 272);
@@ -132,11 +137,28 @@
             this.labelKorisnikInfo.TabIndex = 33;
             this.labelKorisnikInfo.Text = "prijavljeni korisnik info";
             // 
+            // timerZaSliku
+            // 
+            this.timerZaSliku.Interval = 1000;
+            this.timerZaSliku.Tick += new System.EventHandler(this.timerZaSliku_Tick);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.BackgroundImage = global::prodaja_HHAN.Properties.Resources.hhanlogo;
+            this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(1, 27);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(294, 274);
+            this.pictureBoxLogo.TabIndex = 34;
+            this.pictureBoxLogo.TabStop = false;
+            this.pictureBoxLogo.Visible = false;
+            // 
             // FormKupGlavna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(598, 303);
+            this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.labelKorisnikInfo);
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.buttonPregledNarudzbi);
@@ -147,9 +169,11 @@
             this.Text = "Želimo vam ugodnu kupovinu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormKupGlavna_FormClosed);
             this.Load += new System.EventHandler(this.FormKupGlavna_Load);
+            this.VisibleChanged += new System.EventHandler(this.FormLogin_VisibleChanged);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,5 +190,7 @@
         private System.Windows.Forms.Button buttonKreiranjeNarudzbe;
         private System.Windows.Forms.PictureBox pictureBoxLogin;
         private System.Windows.Forms.Label labelKorisnikInfo;
+        private System.Windows.Forms.Timer timerZaSliku;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
     }
 }
