@@ -148,9 +148,10 @@ namespace prodaja_HHAN
             errorProvider.Clear();
             try
             {
-                Program.obrisiNarudzbuINjeneStavke(System.Convert.ToInt32(textBoxNazivAzuriranje.Text));
+                int narudzbaIDKojaSeBrise = System.Convert.ToInt32(textBoxNazivAzuriranje.Text);
+                Program.obrisiNarudzbuINjeneStavke(narudzbaIDKojaSeBrise);
                 OsvjeziGridNarudzbi();
-                MessageBox.Show("Uspješno je obrisana narudžba ID = " + textBoxNazivAzuriranje.Text + " !");
+                MessageBox.Show("Uspješno je obrisana narudžba ID = " + narudzbaIDKojaSeBrise + " !");
             }
             catch (Exception ex)
             {

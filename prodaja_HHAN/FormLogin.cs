@@ -67,7 +67,7 @@ namespace prodaja_HHAN
                         if (Program.tipPrijavljenogKupca == "ADM")
                         {
                             // Ako je prijavljeni korisnik administrator pozdravljamo ga uz pojašnjenje šta može da uradi
-                            MessageBox.Show("Dobro došli " + imeIPrezime + ". " + pozdravnaPoruka);
+                            MessageBox.Show("Dobro došli " + imeIPrezime + ".\n" + pozdravnaPoruka);
                             
                             // kreiramo samo 4 forme koje koriste administratori
                             Program.frAdmGlavna = new FormAdmGlavna();
@@ -82,7 +82,7 @@ namespace prodaja_HHAN
                         else if (Program.tipPrijavljenogKupca == "KUP")
                         {
                             // Ako je prijavljeni korisnik kupac pozdravljamo ga uz pojašnjenje šta može da uradi
-                            MessageBox.Show("Dobro došli " + imeIPrezime + ". " + pozdravnaPoruka);
+                            MessageBox.Show("Dobro došli " + imeIPrezime + ".\n" + pozdravnaPoruka);
 
                             // kreiramo samo 3 forme koje koriste kupci
                             Program.frKupGlavna = new FormKupGlavna();
