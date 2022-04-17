@@ -12,6 +12,7 @@ namespace prodaja_HHAN
 {
     public partial class FormKupPregledNarudzbi : Form
     {
+       
         public FormKupPregledNarudzbi()
         {
             InitializeComponent();
@@ -190,7 +191,6 @@ namespace prodaja_HHAN
             numericUpDownID.Text = dataGridViewNarudzbe.Rows[dataGridViewNarudzbe.CurrentCell.RowIndex].Cells["ID"].FormattedValue.ToString();
             PrikazStavkiOdabraneNarudzbe();
         }
-
-    
+  
     }
 }

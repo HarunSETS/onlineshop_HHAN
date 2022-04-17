@@ -59,7 +59,7 @@ namespace prodaja_HHAN
 
         public static void Odjava()
         {
-            MessageBox.Show(kupacInfoPrikaz + " bićete odjavljeni iz aplikacije. Želimo Vam ugodan dan.");
+            MessageBox.Show("Poštovani " + kupacInfoPrikaz + ",\nbićete odjavljeni iz aplikacije.\n\nŽelimo Vam ugodan dan.");
             
             // Ako su forme koje čuvamo na nivou programa bile kreirane zatvaramo ih (nakon uspješne prijave odgovarajuće forme će ponovo kreirati login forma)
             

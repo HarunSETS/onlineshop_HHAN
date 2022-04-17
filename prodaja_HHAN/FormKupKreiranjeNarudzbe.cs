@@ -63,6 +63,19 @@ namespace prodaja_HHAN
         {
             labelKorisnikInfo.Text = Program.kupacInfoPrikaz;
             NapuniPunuduArtikala();
+
+            string InfoPoruka = "Poštovani kupče, \n\n" +
+                                "molimo da obratite pažnju da smo zbog \n" +
+                                "jednostavnijeg kreiranja narudžbe omogućili da se \n" +
+                                "prebacivanje ubacivanje artikla u korpu \n" +
+                                "ili njegovo uklanjanje iz korpe može napraviti:\n\n" +
+                                "a) DVOSTRUKIM KLIKOM NA ARTIKAL ili \n\n" +
+                                "b) OZNAČAVANJEM ARTIKLA I KORIŠTENJEM DUGMIĆA => <= ";
+
+            if (this.Visible == true)
+            {
+                MessageBox.Show(InfoPoruka);
+            }        
         }
 
         private void FormKupKreiranjeNarudzbe_FormClosed(object sender, FormClosedEventArgs e)
@@ -199,7 +212,7 @@ namespace prodaja_HHAN
             int stanjeNaSkladistu = System.Convert.ToInt32(dataGridViewArtikli.Rows[redPonuda].Cells["ponudaArtikalKolicina"].Value);
 
             if (stanjeNaSkladistu < promjenaKolicine)
-                MessageBox.Show("Tražili ste da u korpu ubacimo " + numericUpDownKolicina.Value + " komada artikla a na skladištu je "
+                MessageBox.Show("Tražili ste da u korpu ubacimo " + promjenaKolicine.ToString() + " komada artikla a na skladištu je "
                     + stanjeNaSkladistu + " komada. Smanjite traženu količinu koju želite ubaciti u korpu.");
             else
             {
@@ -241,11 +254,12 @@ namespace prodaja_HHAN
 
         private void izbaciKolicinuArtiklaIzKorpe(int artikalID, int promjenaKolicine)
         {
+
             // Metod iz korpe uklanja artikal (artikalID) u količini (promjenaKolicine)
 
             if (dataGridViewKorpa.Rows.Count > 0)
             {
-                // Najprije provjerimo da li je količina artikla koju želimo vratiti iz korpe (numericUpDownKolicina) veća od one koja je u korpi
+                // Najprije provjerimo da li je količina artikla koju želimo vratiti iz korpe (promjenaKolicine) veća od one koja je u korpi
                 int redKorpa = VratiRedUKojemJeArtikalUKorpi(artikalID);
 
                 int stanjeUKorpi;
@@ -257,7 +271,7 @@ namespace prodaja_HHAN
                 if (stanjeUKorpi == 0)
                     MessageBox.Show("Odabrani artikal nije u korpi pa ne može biti izbačen iz korpe.");
                 else if (stanjeUKorpi < promjenaKolicine)
-                    MessageBox.Show("Tražili ste da se iz korpe izbaci " + numericUpDownKolicina.Value + " komada artikla a u korpi je "
+                    MessageBox.Show("Tražili ste da se iz korpe izbaci " + promjenaKolicine.ToString() + " komada artikla a u korpi je "
                         + stanjeUKorpi + " komada. Smanjite traženu količinu koju želite izbaciti iz korpe.");
                 else
                 {
@@ -391,6 +405,59 @@ namespace prodaja_HHAN
                     MessageBox.Show("Dogodila se greška prilikom kreiranja narudžbe! " +
                                     "Za više informacija pređite mišem preko uskličnika!");                
                 }
+            }
+        }
+
+        private void dataGridViewArtikli_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            // Dodaje u korpu artikal na koji smo kliknuli dva puta u listi svih artikala.
+            // Dodavanje se vrši u količini kako je rečeno u polju "Količina" (kontrola numericUpDownKolicina).
+
+            if (dataGridViewArtikli.Rows.Count > 0)
+            {
+                // Nakon dvostrukog klika mišem odabrani artikal će biće selektovan pa možemo koristiti dataGridViewArtikli.CurrentCell.RowIndex
+                // da odredimo koji je to artikal
+
+                int artikalID = System.Convert.ToInt32(
+                                        dataGridViewArtikli.Rows[dataGridViewArtikli.CurrentCell.RowIndex].Cells["ponudaArtikalID"].Value.ToString()
+                                      );
+
+                // Sada samo ostaje da ubacimo ovaj artikal u korpu u količini kako je rečeno u kontroli numericUpDownKolicina
+                ubaciKolicinuArtiklaUKorpu(
+                    artikalID,                                              // koji artikal ubacijumo
+                    System.Convert.ToInt32(numericUpDownKolicina.Value)     // u kojoj količini
+                );
+            }
+        }
+
+        private void dataGridViewKorpa_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Uklanja artikal na koji smo u korpi kliknuli 2 puta u potpunosti iz korpe
+            // ali samo ako u korpi ima nešto i nismo dva puta brzo kliknuli na ćelije u kojima su dugmići "-" i "+" 
+            // (da se spriječi da brzo klikanje ba dugmiće "-" i "+" ne obriše artikal iz korpe)
+
+            if (
+                    dataGridViewKorpa.Rows.Count > 0                // ima nešto u korpi
+                &&  dataGridViewKorpa.CurrentCell.ColumnIndex != 3  // korisnik nije dva puta brzo kliknuo na kolonu 4. tj. dugmić korpaOduzmi1Komad
+                &&  dataGridViewKorpa.CurrentCell.ColumnIndex != 5  // korisnik nije dva puta brzo kliknuo na kolonu 6. tj. dugmić korpaDodaj1Komad
+                )
+            {
+                // Nakon dvostrukog klika mišem odabrani artikal će biće selektovan pa možemo koristiti dataGridViewKorpa.CurrentCell.RowIndex
+                // da odredimo koji je to artikal i koja je njegova količina u korpi
+
+                int artikalID = System.Convert.ToInt32(
+                                        dataGridViewKorpa.Rows[dataGridViewKorpa.CurrentCell.RowIndex].Cells["korpaArtikalID"].Value.ToString()
+                                      );
+
+                int kolicinaUKorpi = System.Convert.ToInt32(
+                                        dataGridViewKorpa.Rows[dataGridViewKorpa.CurrentCell.RowIndex].Cells["korpaArtikalKolicina"].Value.ToString()
+                                      );
+
+                // Sada samo preostaje da uklonimo cjelokupnu količinu artikla iz korpe
+                izbaciKolicinuArtiklaIzKorpe(
+                    artikalID,                  // koji artikal izbacijemo
+                    kolicinaUKorpi              // u kojoj količini
+                );
             }
         }
 
