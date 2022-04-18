@@ -40,12 +40,12 @@
             this.groupBoxPretraga = new System.Windows.Forms.GroupBox();
             this.dataGridViewNarudzbe = new System.Windows.Forms.DataGridView();
             this.groupBoxBrisanje = new System.Windows.Forms.GroupBox();
+            this.buttonNarudzbeBrisi = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxNazivAzuriranje = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxSort = new System.Windows.Forms.ComboBox();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.buttonNarudzbeBrisi = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.groupBoxPretraga.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNarudzbe)).BeginInit();
@@ -162,6 +162,22 @@
             this.groupBoxBrisanje.TabStop = false;
             this.groupBoxBrisanje.Text = "Brisanje odabrane narudžbe sa njenim stavkama";
             // 
+            // buttonNarudzbeBrisi
+            // 
+            this.buttonNarudzbeBrisi.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonNarudzbeBrisi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNarudzbeBrisi.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNarudzbeBrisi.Image = global::prodaja_HHAN.Properties.Resources.brisanje_narudzbe_manja;
+            this.buttonNarudzbeBrisi.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonNarudzbeBrisi.Location = new System.Drawing.Point(507, 14);
+            this.buttonNarudzbeBrisi.Name = "buttonNarudzbeBrisi";
+            this.buttonNarudzbeBrisi.Size = new System.Drawing.Size(176, 100);
+            this.buttonNarudzbeBrisi.TabIndex = 78;
+            this.buttonNarudzbeBrisi.Text = "Obriši narudžbu i njene stavke";
+            this.buttonNarudzbeBrisi.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonNarudzbeBrisi.UseVisualStyleBackColor = false;
+            this.buttonNarudzbeBrisi.Click += new System.EventHandler(this.buttonNarudzbeBrisi_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -203,7 +219,7 @@
             this.comboBoxSort.Location = new System.Drawing.Point(407, 46);
             this.comboBoxSort.Name = "comboBoxSort";
             this.comboBoxSort.Size = new System.Drawing.Size(288, 21);
-            this.comboBoxSort.TabIndex = 63;
+            this.comboBoxSort.TabIndex = 30;
             this.comboBoxSort.SelectedIndexChanged += new System.EventHandler(this.comboBoxSort_SelectedIndexChanged);
             // 
             // errorProvider
@@ -211,22 +227,6 @@
             this.errorProvider.BlinkRate = 500;
             this.errorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.AlwaysBlink;
             this.errorProvider.ContainerControl = this;
-            // 
-            // buttonNarudzbeBrisi
-            // 
-            this.buttonNarudzbeBrisi.BackColor = System.Drawing.Color.Moccasin;
-            this.buttonNarudzbeBrisi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNarudzbeBrisi.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNarudzbeBrisi.Image = global::prodaja_HHAN.Properties.Resources.brisanje_narudzbe_manja;
-            this.buttonNarudzbeBrisi.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonNarudzbeBrisi.Location = new System.Drawing.Point(507, 14);
-            this.buttonNarudzbeBrisi.Name = "buttonNarudzbeBrisi";
-            this.buttonNarudzbeBrisi.Size = new System.Drawing.Size(176, 100);
-            this.buttonNarudzbeBrisi.TabIndex = 78;
-            this.buttonNarudzbeBrisi.Text = "Obriši narudžbu i njene stavke";
-            this.buttonNarudzbeBrisi.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonNarudzbeBrisi.UseVisualStyleBackColor = false;
-            this.buttonNarudzbeBrisi.Click += new System.EventHandler(this.buttonNarudzbeBrisi_Click);
             // 
             // FormAdmNarudzbi
             // 

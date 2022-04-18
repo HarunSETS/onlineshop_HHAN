@@ -51,10 +51,11 @@ namespace prodaja_HHAN
             // smanji širinu kolone ID jer je preširoka
             dataGridViewArtikli.Columns["ID"].Width             = 40;
             // povećati širnu drugih kolona
-            dataGridViewArtikli.Columns["BAR KOD"].Width        = 100;
+            dataGridViewArtikli.Columns["BAR KOD"].Width        = 70;
             dataGridViewArtikli.Columns["NAZIV"].Width          = 200;
-            dataGridViewArtikli.Columns["VRSTA"].Width          = 130;
-            dataGridViewArtikli.Columns["CIJENA [KM]"].Width    = 120;
+            dataGridViewArtikli.Columns["VRSTA"].Width          = 90;
+            dataGridViewArtikli.Columns["CIJENA [KM]"].Width    = 90;
+            dataGridViewArtikli.Columns["KOLICINA"].Width       = 90;
         }
 
         private void FormAdmArtikala_FormClosed(object sender, FormClosedEventArgs e)
@@ -68,10 +69,10 @@ namespace prodaja_HHAN
             {
 
                 String upit =
-                    " select a.artikal_id as ID, a.bar_kod as 'BAR KOD', a.naziv_artikla as NAZIV," +
-                    "        a.vrsta_artikla as VRSTA, a.cijena as 'CIJENA [KM]'" +
-                    " from artikli a " +
-                    " where 1=1 "; // dodato 1=1 kako bi se lakše spojili nastavci za filter po bar kodu i nazivu
+                    " select a.artikal_id as ID, a.bar_kod as 'BAR KOD', a.naziv_artikla as NAZIV, " +
+                    "        a.vrsta_artikla as VRSTA, a.cijena as 'CIJENA [KM]', s.kolicina_stanje as KOLICINA " +
+                    " from artikli a, skladiste s " +
+                    " where a.artikal_id = s.artikal_id ";
 
                 if (textBoxBarKodTrazi.Text != "")
                 {

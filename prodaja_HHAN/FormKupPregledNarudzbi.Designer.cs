@@ -145,7 +145,7 @@
             this.numericUpDownID.Name = "numericUpDownID";
             this.numericUpDownID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.numericUpDownID.Size = new System.Drawing.Size(107, 21);
-            this.numericUpDownID.TabIndex = 154;
+            this.numericUpDownID.TabIndex = 42;
             // 
             // textBoxTotal
             // 
@@ -197,7 +197,7 @@
             this.dataGridViewNarudzbeStavke.ReadOnly = true;
             this.dataGridViewNarudzbeStavke.RowHeadersVisible = false;
             this.dataGridViewNarudzbeStavke.Size = new System.Drawing.Size(502, 184);
-            this.dataGridViewNarudzbeStavke.TabIndex = 42;
+            this.dataGridViewNarudzbeStavke.TabIndex = 45;
             // 
             // dataGridViewNarudzbe
             // 
@@ -224,7 +224,7 @@
             this.buttonKupciTrazi.Location = new System.Drawing.Point(202, 243);
             this.buttonKupciTrazi.Name = "buttonKupciTrazi";
             this.buttonKupciTrazi.Size = new System.Drawing.Size(115, 67);
-            this.buttonKupciTrazi.TabIndex = 40;
+            this.buttonKupciTrazi.TabIndex = 43;
             this.buttonKupciTrazi.Text = "Traži ...";
             this.buttonKupciTrazi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonKupciTrazi.UseVisualStyleBackColor = false;
