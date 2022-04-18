@@ -56,7 +56,7 @@
             this.buttonAdmNarudzbe.Location = new System.Drawing.Point(352, 215);
             this.buttonAdmNarudzbe.Name = "buttonAdmNarudzbe";
             this.buttonAdmNarudzbe.Size = new System.Drawing.Size(216, 58);
-            this.buttonAdmNarudzbe.TabIndex = 14;
+            this.buttonAdmNarudzbe.TabIndex = 17;
             this.buttonAdmNarudzbe.Text = "Pregled i brisanje narudžbi";
             this.buttonAdmNarudzbe.UseVisualStyleBackColor = false;
             this.buttonAdmNarudzbe.Click += new System.EventHandler(this.buttonAdmNarudzbe_Click);

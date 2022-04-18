@@ -48,6 +48,7 @@
             this.tabPageAzuriranje = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBoxTipKorisnikaAzuriranje = new System.Windows.Forms.ComboBox();
+            this.buttonKupciAzuriranje = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxIDAzuriranje = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -67,6 +68,7 @@
             this.labelIme = new System.Windows.Forms.Label();
             this.textBoxImeAzuriranje = new System.Windows.Forms.TextBox();
             this.tabPageKreiranje = new System.Windows.Forms.TabPage();
+            this.buttonKupcKreiranje = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.comboBoxTipKorisnikaKreiranje = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -88,12 +90,10 @@
             this.label19 = new System.Windows.Forms.Label();
             this.textBoxImeKreiranje = new System.Windows.Forms.TextBox();
             this.tabPageBrisanje = new System.Windows.Forms.TabPage();
+            this.buttonBrisanje = new System.Windows.Forms.Button();
             this.textBoxIDBrisanje = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.buttonKupciAzuriranje = new System.Windows.Forms.Button();
-            this.buttonKupcKreiranje = new System.Windows.Forms.Button();
-            this.buttonBrisanje = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.groupBoxPretraga.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKorisnici)).BeginInit();
@@ -312,7 +312,23 @@
             this.comboBoxTipKorisnikaAzuriranje.Location = new System.Drawing.Point(347, 22);
             this.comboBoxTipKorisnikaAzuriranje.Name = "comboBoxTipKorisnikaAzuriranje";
             this.comboBoxTipKorisnikaAzuriranje.Size = new System.Drawing.Size(131, 21);
-            this.comboBoxTipKorisnikaAzuriranje.TabIndex = 76;
+            this.comboBoxTipKorisnikaAzuriranje.TabIndex = 64;
+            // 
+            // buttonKupciAzuriranje
+            // 
+            this.buttonKupciAzuriranje.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonKupciAzuriranje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonKupciAzuriranje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonKupciAzuriranje.Image = global::prodaja_HHAN.Properties.Resources.azuriraj_korisnika_dorada;
+            this.buttonKupciAzuriranje.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonKupciAzuriranje.Location = new System.Drawing.Point(523, 22);
+            this.buttonKupciAzuriranje.Name = "buttonKupciAzuriranje";
+            this.buttonKupciAzuriranje.Size = new System.Drawing.Size(132, 125);
+            this.buttonKupciAzuriranje.TabIndex = 75;
+            this.buttonKupciAzuriranje.Text = "Ažuriraj podatke o postojećem korisniku";
+            this.buttonKupciAzuriranje.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonKupciAzuriranje.UseVisualStyleBackColor = false;
+            this.buttonKupciAzuriranje.Click += new System.EventHandler(this.buttonKupciAzuriranje_Click);
             // 
             // label8
             // 
@@ -330,7 +346,7 @@
             this.textBoxIDAzuriranje.Location = new System.Drawing.Point(149, 22);
             this.textBoxIDAzuriranje.Name = "textBoxIDAzuriranje";
             this.textBoxIDAzuriranje.Size = new System.Drawing.Size(61, 21);
-            this.textBoxIDAzuriranje.TabIndex = 73;
+            this.textBoxIDAzuriranje.TabIndex = 55;
             // 
             // label7
             // 
@@ -501,6 +517,22 @@
             this.tabPageKreiranje.Text = "Kreiranje novog korisnika";
             this.tabPageKreiranje.UseVisualStyleBackColor = true;
             // 
+            // buttonKupcKreiranje
+            // 
+            this.buttonKupcKreiranje.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonKupcKreiranje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonKupcKreiranje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonKupcKreiranje.Image = global::prodaja_HHAN.Properties.Resources.dodaj_korisnika;
+            this.buttonKupcKreiranje.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonKupcKreiranje.Location = new System.Drawing.Point(523, 22);
+            this.buttonKupcKreiranje.Name = "buttonKupcKreiranje";
+            this.buttonKupcKreiranje.Size = new System.Drawing.Size(132, 125);
+            this.buttonKupcKreiranje.TabIndex = 119;
+            this.buttonKupcKreiranje.Text = "Kreiraj novog korisnika";
+            this.buttonKupcKreiranje.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonKupcKreiranje.UseVisualStyleBackColor = false;
+            this.buttonKupcKreiranje.Click += new System.EventHandler(this.buttonKupcKreiranje_Click);
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -517,7 +549,7 @@
             this.comboBoxTipKorisnikaKreiranje.Location = new System.Drawing.Point(347, 22);
             this.comboBoxTipKorisnikaKreiranje.Name = "comboBoxTipKorisnikaKreiranje";
             this.comboBoxTipKorisnikaKreiranje.Size = new System.Drawing.Size(131, 21);
-            this.comboBoxTipKorisnikaKreiranje.TabIndex = 116;
+            this.comboBoxTipKorisnikaKreiranje.TabIndex = 105;
             // 
             // label11
             // 
@@ -535,7 +567,7 @@
             this.textBoxIDKreiranje.Location = new System.Drawing.Point(149, 22);
             this.textBoxIDKreiranje.Name = "textBoxIDKreiranje";
             this.textBoxIDKreiranje.Size = new System.Drawing.Size(61, 21);
-            this.textBoxIDKreiranje.TabIndex = 114;
+            this.textBoxIDKreiranje.TabIndex = 97;
             // 
             // label12
             // 
@@ -687,6 +719,22 @@
             this.tabPageBrisanje.Text = "Brisanje korisnika koji nema vezane narudžbe";
             this.tabPageBrisanje.UseVisualStyleBackColor = true;
             // 
+            // buttonBrisanje
+            // 
+            this.buttonBrisanje.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonBrisanje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBrisanje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBrisanje.Image = global::prodaja_HHAN.Properties.Resources.obrisi_korisnika_nova;
+            this.buttonBrisanje.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonBrisanje.Location = new System.Drawing.Point(523, 22);
+            this.buttonBrisanje.Name = "buttonBrisanje";
+            this.buttonBrisanje.Size = new System.Drawing.Size(132, 125);
+            this.buttonBrisanje.TabIndex = 200;
+            this.buttonBrisanje.Text = "Obriši podatke o korisniku";
+            this.buttonBrisanje.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonBrisanje.UseVisualStyleBackColor = false;
+            this.buttonBrisanje.Click += new System.EventHandler(this.buttonBrisanje_Click);
+            // 
             // textBoxIDBrisanje
             // 
             this.textBoxIDBrisanje.BackColor = System.Drawing.SystemColors.InactiveBorder;
@@ -694,7 +742,7 @@
             this.textBoxIDBrisanje.Location = new System.Drawing.Point(149, 22);
             this.textBoxIDBrisanje.Name = "textBoxIDBrisanje";
             this.textBoxIDBrisanje.Size = new System.Drawing.Size(61, 21);
-            this.textBoxIDBrisanje.TabIndex = 76;
+            this.textBoxIDBrisanje.TabIndex = 190;
             this.textBoxIDBrisanje.TextChanged += new System.EventHandler(this.textBoxIDBrisanje_TextChanged);
             // 
             // label20
@@ -712,54 +760,6 @@
             this.errorProvider.BlinkRate = 500;
             this.errorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.AlwaysBlink;
             this.errorProvider.ContainerControl = this;
-            // 
-            // buttonKupciAzuriranje
-            // 
-            this.buttonKupciAzuriranje.BackColor = System.Drawing.Color.Moccasin;
-            this.buttonKupciAzuriranje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonKupciAzuriranje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonKupciAzuriranje.Image = global::prodaja_HHAN.Properties.Resources.azuriraj_korisnika_dorada;
-            this.buttonKupciAzuriranje.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonKupciAzuriranje.Location = new System.Drawing.Point(523, 22);
-            this.buttonKupciAzuriranje.Name = "buttonKupciAzuriranje";
-            this.buttonKupciAzuriranje.Size = new System.Drawing.Size(132, 125);
-            this.buttonKupciAzuriranje.TabIndex = 75;
-            this.buttonKupciAzuriranje.Text = "Ažuriraj podatke o postojećem korisniku";
-            this.buttonKupciAzuriranje.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonKupciAzuriranje.UseVisualStyleBackColor = false;
-            this.buttonKupciAzuriranje.Click += new System.EventHandler(this.buttonKupciAzuriranje_Click);
-            // 
-            // buttonKupcKreiranje
-            // 
-            this.buttonKupcKreiranje.BackColor = System.Drawing.Color.Moccasin;
-            this.buttonKupcKreiranje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonKupcKreiranje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonKupcKreiranje.Image = global::prodaja_HHAN.Properties.Resources.dodaj_korisnika;
-            this.buttonKupcKreiranje.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonKupcKreiranje.Location = new System.Drawing.Point(523, 22);
-            this.buttonKupcKreiranje.Name = "buttonKupcKreiranje";
-            this.buttonKupcKreiranje.Size = new System.Drawing.Size(132, 125);
-            this.buttonKupcKreiranje.TabIndex = 119;
-            this.buttonKupcKreiranje.Text = "Kreiraj novog korisnika";
-            this.buttonKupcKreiranje.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonKupcKreiranje.UseVisualStyleBackColor = false;
-            this.buttonKupcKreiranje.Click += new System.EventHandler(this.buttonKupcKreiranje_Click);
-            // 
-            // buttonBrisanje
-            // 
-            this.buttonBrisanje.BackColor = System.Drawing.Color.Moccasin;
-            this.buttonBrisanje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBrisanje.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBrisanje.Image = global::prodaja_HHAN.Properties.Resources.obrisi_korisnika_nova;
-            this.buttonBrisanje.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonBrisanje.Location = new System.Drawing.Point(523, 22);
-            this.buttonBrisanje.Name = "buttonBrisanje";
-            this.buttonBrisanje.Size = new System.Drawing.Size(132, 125);
-            this.buttonBrisanje.TabIndex = 78;
-            this.buttonBrisanje.Text = "Obriši podatke o korisniku";
-            this.buttonBrisanje.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonBrisanje.UseVisualStyleBackColor = false;
-            this.buttonBrisanje.Click += new System.EventHandler(this.buttonBrisanje_Click);
             // 
             // FormAdmKupaca
             // 

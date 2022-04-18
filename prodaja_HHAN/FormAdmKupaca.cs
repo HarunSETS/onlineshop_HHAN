@@ -269,9 +269,10 @@ namespace prodaja_HHAN
             {
                 try
                 {
-                    Program.brisanjeKupca(System.Convert.ToInt32(textBoxIDBrisanje.Text));
+                    int kupacID = System.Convert.ToInt32(textBoxIDBrisanje.Text);
+                    Program.brisanjeKupca(kupacID);
                     PrikazKupaca();
-                    MessageBox.Show("Podaci o korisniku ID = " + textBoxIDAzuriranje.Text + " ažurirani!");
+                    MessageBox.Show("Podaci o korisniku ID = " + kupacID + " obrisani!");
                 }
                 catch (Exception ex)
                 {
